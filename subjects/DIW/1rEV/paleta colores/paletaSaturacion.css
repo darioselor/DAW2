@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+div{
+    width: 100%;
+    height: 100px;
+}
+
+#div1 {
+    background-color: hsl(204, 90%, 10%);
+}
+#div2 {
+    background-color: hsl(203, 80%, 20%);;
+}
+#div3 {
+    background-color: hsl(202, 70%, 30%);;
+}
+#div4 {
+    background-color: hsl(201, 60%, 40%);;
+}
+#div5{
+    background-color: hsl(200, 50%, 50%);;
+}
+#div6{
+    background-color: hsl(199, 60%, 60%);;
+}
+#div7{
+    background-color: hsl(198, 70%, 70%);;
+}
+#div8{
+    background-color: hsl(197, 80%, 80%);;
+}
+#div9{
+    background-color: hsl(196, 90%, 90%);;
+}

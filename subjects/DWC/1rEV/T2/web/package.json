@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "web": "file:"
   },
   "name": "web",
   "version": "1.0.0",
   "description": "polla con huevos y con mierda",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
