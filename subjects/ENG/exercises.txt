@@ -1,7 +1,40 @@
 exercises
-5 - 
-a -> purchases
-b -> avoid 
-c -> download
-d -> For instance
-e -> trust
+
+page 63 {
+
+    5 {
+
+        a -> purchases
+        b -> avoid 
+        c -> to set
+        d -> For instance
+        e -> guarantee, make sure
+    }
+
+    6 {
+        a-> necessary, crucial
+        b-> dangerous
+        c-> disallowing
+        d-> higher
+        e-> trust
+        f-> reliable
+    }
+}
+
+page 64 {
+    2 {
+        a -> go
+        b -> make
+        c -> rains
+        d -> have, bring
+        e -> cooks
+    }
+    3 {
+        a -> When
+        b -> If
+        c -> If
+        d -> Unless
+        e -> If
+        f -> Unless 
+    }
+}
