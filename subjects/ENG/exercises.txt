@@ -1,0 +1,7 @@
+exercises
+5 - 
+a -> purchases
+b -> avoid 
+c -> download
+d -> For instance
+e -> trust
