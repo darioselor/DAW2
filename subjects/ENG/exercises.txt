@@ -1,40 +1,71 @@
 exercises
 
-page 63 {
 
-    5 {
 
-        a -> purchases
-        b -> avoid 
-        c -> to set
-        d -> For instance
-        e -> guarantee, make sure
+Unit 7 {
+    page 63 {
+        5 {
+
+            a -> purchases
+            b -> avoid 
+            c -> to set
+            d -> For instance
+            e -> guarantee, make sure
+        }
+        6 {
+            a-> necessary, crucial
+            b-> dangerous
+            c-> disallowing
+            d-> higher
+            e-> trust
+            f-> reliable
+        }
     }
-
-    6 {
-        a-> necessary, crucial
-        b-> dangerous
-        c-> disallowing
-        d-> higher
-        e-> trust
-        f-> reliable
+    page 64 {
+        2 {
+            a -> go
+            b -> make
+            c -> rains
+            d -> have, bring
+            e -> cooks
+        }
+        3 {
+            a -> When
+            b -> If
+            c -> If
+            d -> Unless
+            e -> If
+            f -> Unless 
+        }
+        4 {
+            a -> study, will go
+            b -> won't celebrate, doesn't improve
+            c -> will be, eats
+            d -> won't get, doesn't send
+            e -> don't hurry, will be
+        }
     }
-}
-
-page 64 {
-    2 {
-        a -> go
-        b -> make
-        c -> rains
-        d -> have, bring
-        e -> cooks
-    }
-    3 {
-        a -> When
-        b -> If
-        c -> If
-        d -> Unless
-        e -> If
-        f -> Unless 
+    page 65 {
+        5 {
+            a -> If I were fluent in english, I would study in an foreing university
+            b -> If I were younger, I would start playing minecraft earlier
+            c -> If I were you, I would do more exercise.
+            d -> If I were rich, I would have more free time.
+            e -> If I met a famous person, I would ask him for a signature.
+        }
+        6 {
+            a -> had gone, would have studied
+            b -> would have been, hadn't married
+            c -> wouldn't have missed, had woken up
+            d -> had continued, would have been
+            e -> wouldn't have met, hadn't studied 
+        }
+        7 {
+            a -> If I had saved money, I would have bought flowers for my girlfriend.
+            b -> If Teresa had practiced more, she wouldn't have failed the driving test.
+            c -> If the students had agreed with the education polices, they wouldn't have gone on a strike.
+            d -> If Michael hadn't cheated on Claire, she wouldn't have broken up with him.
+            e -> If I hadn't lost your phone number, I would have phoned you.
+        }
     }
 }
