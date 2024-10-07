@@ -69,3 +69,40 @@ Unit 7 {
         }
     }
 }
+
+Unit 8 {
+    page 69 {
+        exercise 2 {
+            a -> Hybrid apps
+            b -> Mobile Web apps
+            c -> Native apps
+        }
+        exercise 3 {
+            - Native apps: Camera, Compass, flipboard, Angry Birds
+            - Mobile Web apps: Gmail, Google Maps, Google books, Air bnb
+            - Hybrid apps: Financial Times, Shazam, Twitter
+        }
+    }
+    page 70 {
+        exercise 4 {
+            It's the combination of audio, video, image and text contents/media in only one platform.
+        }
+        exercise 5 {
+            a -> animation
+            b -> video/audio clip
+            c -> presentation
+            d -> tutorial
+            e -> media
+            f -> videogame
+            g -> digitise
+            h -> interactivity
+            i -> simulation
+            j -> fair use 
+        }
+    }
+    page 71 {
+        exercise 2 {
+
+        }
+    }
+}
