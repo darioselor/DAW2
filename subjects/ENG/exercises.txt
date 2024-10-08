@@ -102,7 +102,36 @@ Unit 8 {
     }
     page 71 {
         exercise 2 {
+            a -> 3
+            b -> 5
+            c -> 1
+            d -> 4 
+            e -> 2
+        }
+    }
+    page 71 {
+        exercise 3 {
+            a -> Because of the visual content of the menu.
+            b -> The McDonalds is designed for families and making experiences for costumers.
+            c -> Yes because it makes easier and faster the payment process so it allows quicker turnaround of tables.
+            d -> The writer says that it's worse for the beverage enviroment because of the heat and bacteria, and it's more expensive than paper.
+            e -> The virtualization of such a social activity and the loss of personal contact.
+        }
+        exercise 4 {
+            Experimenting -> Trying out
+            Familiar, famous -> Well-known
 
+            Lining up -> Queuing
+            Probabilities -> Chances
+
+            Graftifying, nice -> Pleasant
+
+            Switch -> Turnaround
+            Supplements -> Extras
+
+            Drink, refreshment -> Beverage
+            Recreation, free time -> Leisure
+            Drawback -> Downside 
         }
     }
 }
