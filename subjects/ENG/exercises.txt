@@ -109,7 +109,7 @@ Unit 8 {
             e -> 2
         }
     }
-    page 71 {
+    page 72 {
         exercise 3 {
             a -> Because of the visual content of the menu.
             b -> The McDonalds is designed for families and making experiences for costumers.
@@ -134,4 +134,47 @@ Unit 8 {
             Drawback -> Downside 
         }
     }
+    page 73 {
+        exercise 2 {
+
+            a -> is located
+            b -> are produced
+            c -> is bought
+            d -> was finally completed
+            e -> invested
+               
+        }
+        exercise 3 {
+            a -> She was attacked in the street last night.
+            b -> A man who was driving very fast was arrested.
+            c -> All the photographs of London had been displayed in the museum by the artist.
+            d -> The students will be invited to the party by the teacher.
+            e -> The Olympics were started by the greeks. 
+        }
+
+    }
+    page 74 {
+        exercise 4 {
+            a -> Documents are printed every day in the conference room.
+            b -> A letter was sent from Barcelona last week.
+            c -> The sandwiches hasn't been eaten by the children yet.
+            d -> Shop will be closed next month.
+            e -> New boots were used by the football player in the last match.
+        }
+        exercise 5 {
+            a -> had
+            b -> wanted
+            c -> created
+            d -> was
+            e -> didn't have
+            f -> is
+            g -> are uploaded
+            h -> are then downloaded
+            i -> is devoted
+            j -> feels
+            k -> is planning
+            l -> will be needed
+        }
+    }
+
 }
