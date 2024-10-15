@@ -175,6 +175,17 @@ Unit 8 {
             k -> is planning
             l -> will be needed
         }
-    }
+        exercise 6 {
+            a -> All the boys were given new football t-shirts by the organizers.
+            b -> New footbal t-shirts were given to all the boys by the organizers.
 
+            a -> A bike was given to my mother by my father on her birthday.
+            b -> My mother was given a bike by my father for her birthday.
+
+            a -> Bedtime stories were read to my sister by my mother.
+            b -> My sister was read bedtime stories by my mother.
+        }
+    }
+    page 75 {
+    }
 }
