@@ -1,0 +1,46 @@
+¿Cómo desmontar y montar un PC sin liarte?
+Antes de empezar
+Busca un destornillador (de estrella normalmente) y, si tienes, una pulsera antiestática (no es obligatoria, pero mejor prevenir).
+Apaga el PC, desconéctalo de la corriente y quita todos los cables externos (monitor, teclado, ratón, etc.).
+Trabaja en una mesa amplia y limpia. Nada de alfombras, por favor, que no queremos chispazos.
+Paso 1: Abrir la caja
+Localiza los tornillos de la parte trasera que sujetan los paneles laterales (normalmente son 2 o 3).
+Desliza o retira el panel lateral (¡ojo con los bordes metálicos, algunos cortan!).
+Paso 2: Desconecta los cables internos
+Fuente de alimentación: desconecta los cables que van a la placa base (uno grande de 24 pines y otro más pequeño para la CPU). También quita los cables de los discos duros y otros componentes.
+Otros cables: retira los que conectan los botones y puertos USB del frontal a la placa base.
+Paso 3: Saca las piezas grandes
+Tarjeta gráfica: si tienes una, quita el tornillo que la fija y presiona el seguro del slot para sacarla.
+Discos duros y SSD: afloja los tornillos o saca las bandejas en las que están montados.
+RAM: presiona hacia abajo los clips de los lados del módulo de RAM para que salga.
+Disipador y CPU:
+Retira el ventilador del procesador (puede tener tornillos o clips).
+Limpia la pasta térmica vieja de la CPU con alcohol.
+Levanta el seguro del socket y saca la CPU con cuidado (¡no toques los pines!).
+Placa base: desatorníllala del chasis y sáquela sujetándola por los bordes.
+Fuente de alimentación: desatorníllala de la parte trasera y sácala.
+¿Y ahora cómo lo volvemos a montar?
+Paso 1: Coloca la placa base
+Atornilla los separadores (unos tornillitos que vienen con la caja y evitan que la placa toque el metal).
+Pon la placa base en su sitio y fíjala con tornillos.
+Paso 2: Monta la CPU y el disipador
+Abre el seguro del socket, coloca la CPU (fíjate en la flechita para orientarla) y cierra el seguro.
+Echa una gotita de pasta térmica en el centro de la CPU.
+Monta el disipador encima según las instrucciones (algunos tienen tornillos, otros clips).
+Paso 3: Instala la RAM
+Mete los módulos en los slots correspondientes (fíjate en la muesca para no forzarlos) y presiona hasta que los clips hagan "clic".
+Paso 4: Coloca los discos duros o SSD
+Atorníllalos en sus bandejas o soportes y conecta los cables SATA (uno va a la placa base y otro a la fuente de alimentación).
+Paso 5: Monta la fuente de alimentación
+Colócala en su hueco, atorníllala y conecta los cables principales:
+Cable gordo de 24 pines a la placa base.
+Cable de 4/8 pines para la CPU.
+Cables para discos duros, SSD y tarjetas gráficas (si necesitas).
+Paso 6: Vuelve a meter la gráfica (si tienes una)
+Inserta la tarjeta gráfica en el slot PCIe, fíjala con un tornillo y conecta su cable de alimentación (si lo necesita).
+Paso 7: Conecta los cables frontales
+Conecta los cables de los botones de encendido, USB y audio del frontal a la placa base. Busca las etiquetas (POWER SW, RESET SW, etc.) o el manual de la placa para ubicarlos.
+Paso 8: Cierra la caja y prueba el PC
+Coloca de nuevo el panel lateral y atorníllalo.
+Conecta el PC a la corriente, enchufa el monitor y el teclado, y enciéndelo.
+Si todo va bien, deberías ver la pantalla de inicio del sistema o el logo de la placa base.

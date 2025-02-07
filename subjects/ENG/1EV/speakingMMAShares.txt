@@ -1,0 +1,56 @@
+ ASPECTS:
+
+    - Name of the apps
+    - General description
+    - Specific description
+    - Target audience
+    - Logo, slogan, image
+    - Extra features and additional information
+
+// Parte de Mauro Lara:
+. MMA Shares
+
+. It's an app that uses MMA fighters as shares. You can 
+buy them and if they become greater fighters in real life 
+or their reputation increases your shares will have more value. 
+Every day there are some fighters you can bid for them in an 
+auction. The purpose is to compare the fighters you have with
+your friends and see if they have better fighters.
+This app is inspired in La Liga Fantasy, a very popular one that
+uses football players. We've decided to expand that app to other 
+niches.
+
+// Part of Darío Segarra:
+
+. One way we found for monetizing the app is by the sales of lootboxes.
+
+Have you ever heard of lootboxes?
+They are boxes that give you the change of getting the fighter
+you want. The users pay more or less depending on what exclusive fighter
+they can get. The prices would be from 1$ to 5$.
+
+Other way to monetize is by asking for a commission in P2P sales.
+Users will be able to sell very uncommon fighters with real
+currency to other users interested. The users set the price and if
+someone thinks that the fighter is worth that money he could pay it.
+We will be asking for a 1% of that transaction.
+ 
+
+
+
+// Parte de David Ortega:
+
+- target audience
+- logo
+
+. Our main audience is MMA fans, especially teenagers and young 
+adults. We know this crowd is all about staying up-to-date with 
+their favorite fighters, matches, and the latest news, so we 
+built this app to be their go-to for everything MMA.
+
+. Our logo has a red and agressive look, like MMA itself. 
+We wanted it to be intense and memorable so fans feel that 
+connection right away. Our slogan, “Manage your favorite fighters” 
+really captures what we’re going for: it’s not just about 
+watching MMA, but actually feeling that you are managing and 
+a very inmersive experience.

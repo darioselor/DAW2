@@ -1,0 +1,18 @@
+$border-radious-names: map-keys($border-radious);
+$border-radious-value: map-values($border-radious);
+
+@each $border-radious-names, $border-radious-value in $border-radious {
+    .g--border-radious-all-#{$border-radious-names}{
+        border-radius: $border-radious-value;
+    }
+    .g--border-radious-left-#{$border-radious-names}{
+        border-top-left-radius: $border-radious-value;
+        border-bottom-left-radius: $border-radious-value;
+    }
+    .g--border-radious-right-#{$border-radious-names}{
+        border-top-right-radius: $border-radious-value;
+        border-bottom-right-radius: $border-radious-value;
+    }
+    
+
+}

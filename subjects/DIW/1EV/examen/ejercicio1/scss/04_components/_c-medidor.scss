@@ -1,0 +1,17 @@
+.c-medidor{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    padding-top: var(--padding-m);
+    padding-bottom: var(--padding-m);
+    color: var(--color-neutral-50);
+    
+    &__indicatior{
+
+        background-color: rgb(59, 59, 59);
+        &--rounded{
+            border-top-left-radius: var(--border-radious-xl);
+            border-bottom-left-radius: var(--border-radious-xl);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$color-name: map-get($set-colors, "color-name");
+$colors: map-get($set-colors, "colors");
+$border-radious-names: map-keys($border-radious);
+$border-radious-value: map-values($border-radious);
+$font-names: map-keys($font-sizes);
+$font-sizes-values: map-values($font-sizes);
+$border-radious-names: map-keys($border-radious);
+$border-radious-value: map-values($border-radious);
+$padding-name: map-keys($paddings);
+$padding-value: map-values($paddings);
+
+:root {
+
+    @each $color, $values in $colors {
+        @for $i from 1 through length($color-name) {
+            @if (nth($color-name, $i)=="") {
+                --color-#{$color}: #{nth($values, $i)};
+            }
+
+            @else {
+                --color-#{$color}-#{nth($color-name,$i)}: #{nth($values, $i)};
+            }
+        }
+    }
+
+    @each $border-radious-names, $border-radious-value in $border-radious {
+        --border-radious-#{$border-radious-names}: #{$border-radious-value};
+    }
+
+    @each $font-names, $font-sizes-values in $font-sizes {
+        --font-size-#{$font-names}: #{$font-sizes-values};
+    }
+
+    @each $padding-name, $padding-value in $paddings {
+        --padding-#{$padding-name}: #{$padding-value};
+    }
+
+}

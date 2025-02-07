@@ -1,0 +1,40 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "div1 div1 div1 div1"
+    "div2 div3 div4 div4"
+    "div2 div3 div6 div7"
+    "div5 div3 div6 div8";
+}
+.div1{
+    grid-area: div1;
+    background-color: black;
+}
+.div2{
+    grid-area: div2;
+    background-color: grey;
+}
+.div3 {
+    grid-area: div3;
+    background-color: yellow;
+}
+.div4 {
+    grid-area: div4;
+    background-color: darkgrey;
+}
+.div5 {
+    grid-area: div5;
+    background-color: lightyellow;
+}
+.div6 {
+    grid-area: div6;
+    background-color: blue;
+}
+.div7 {
+    grid-area: div7;
+    background-color: darkblue;
+}
+.div8 {
+    grid-area: div8;
+    background-color: lightblue;
+}

@@ -1,0 +1,15 @@
+$padding-name: map-keys($paddings);
+$padding-value: map-values($paddings);
+
+@each $padding-name, $padding-value in $paddings {
+    .g--padding-vertical-#{$padding-name} {
+        padding-top: $padding-value;
+        padding-bottom: $padding-value;
+    }
+    .g--padding-horizontal-#{$padding-name} {
+        padding-left: $padding-value;
+        padding-right: $padding-value;
+        
+    }
+
+}

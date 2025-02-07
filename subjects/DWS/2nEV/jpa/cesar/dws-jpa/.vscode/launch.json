@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DwsJpaApplication<dws-jpa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "es.cesguiro.DwsJpaApplication",
+            "projectName": "dws-jpa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

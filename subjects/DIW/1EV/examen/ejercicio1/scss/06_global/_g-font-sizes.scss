@@ -1,0 +1,8 @@
+$font-names: map-keys($font-sizes);
+$font-sizes-values: map-values($font-sizes);
+
+@each $font-names, $font-sizes-values in $font-sizes {
+    .g-font-size-#{$font-names}{
+        font-size: #{$font-sizes-values};
+    }
+}

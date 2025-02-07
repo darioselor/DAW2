@@ -1,0 +1,34 @@
+$utilities:(
+    "propiedades":((width,a,a,1),(padding,b,a,0),(margin,a,b,1)),
+    "keys":(
+        "a":(10,20,30,40,50),
+        "b":(xs,s,m,l,xl)
+    ),
+    "values":(
+        "a":(2px,4px,8px,16px,20px),
+        "b":(10%,20%,30%,40%,50%)
+    )    
+);
+
+$propiedades: map-get($utilities, "propiedades");
+$keys: map-get($utilities, "keys");
+$values: map-get($utilities, "values");
+
+@each $propiedad1, $propiedad2, $propiedad3, $default in $propiedades {
+    @each $letter, $key in $keys{
+        @if ($propiedad2 == $letter){
+            @each $letterb, $value in $values{
+                @if ($propiedad3 == $letterb){
+                    @if ($default == 0) {
+                        .g--#{$propiedad1}-#{$key} {
+                            #{$propiedad1}: #{$value}
+                        }
+                    }
+                }
+                
+            }
+
+        }
+        
+    }
+}

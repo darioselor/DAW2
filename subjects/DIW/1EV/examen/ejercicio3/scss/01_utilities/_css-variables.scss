@@ -1,0 +1,8 @@
+$margin-name: map-keys($margins);
+$margin-value: map-values($margins);
+
+:root{
+    @each $margin-name, $margin-value in $margins {
+    --margin-#{$margin-name}: #{$margin-value};
+    }   
+}

@@ -1,0 +1,37 @@
+:root {
+  --margin-xs: 2px;
+  --margin-s: 4px;
+  --margin-m: 6px;
+  --margin-l: 10px;
+  --margin-xl: 14px;
+  --margin-auto: "auto";
+}
+
+.l-flex {
+  display: flex;
+}
+
+.c-menu {
+  display: flex;
+}
+.c-menu--left .c-menu__help {
+  margin-right: var(--margin-auto);
+}
+.c-menu--1-3 .c-menu__signin {
+  margin-left: var(--margin-auto);
+}
+.c-menu--2-2 .c-menu__signin {
+  margin-right: var(--margin-auto);
+}
+.c-menu--1-1-2 .c-menu__signin {
+  margin-right: var(--margin-auto);
+  margin-left: var(--margin-auto);
+}
+.c-menu--right .c-menu__file {
+  margin-left: var(--margin-auto);
+}
+.c-menu--3-1 .c-menu__login {
+  margin-right: var(--margin-auto);
+}
+
+/*# sourceMappingURL=main.css.map */

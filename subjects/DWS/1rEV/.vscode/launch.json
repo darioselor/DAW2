@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DarioselorApplication",
+            "request": "launch",
+            "mainClass": "DarioselorApplication",
+            "projectName": "dws-presentation"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "DarioselorApplication",
+            "request": "launch",
+            "mainClass": "com.arquitecture.darioselor.DarioselorApplication",
+            "projectName": "com.arquitecture-darioselor"
+        },
+        {
+            "type": "java",
+            "name": "ExamenApplication",
+            "request": "launch",
+            "mainClass": "fpmislata.examen.ExamenApplication",
+            "projectName": "com.fpmislata-examen"
+        },
+        {
+            "type": "java",
+            "name": "DwsDomain2Application",
+            "request": "launch",
+            "mainClass": "es.cesguiro.DwsDomain2Application",
+            "projectName": "es.cesguiro-dws-domain2"
+        },
+        {
+            "type": "java",
+            "name": "DwsDomainApplication",
+            "request": "launch",
+            "mainClass": "es.cesguiro.DwsDomainApplication",
+            "projectName": "es.cesguiro-dws-domain"
+        },
+        {
+            "type": "java",
+            "name": "DwsHateoasApplication",
+            "request": "launch",
+            "mainClass": "es.cesguiro.DwsHateoasApplication",
+            "projectName": "es.cesguiro-dws-hateoas"
+        },
+        {
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "es.cesguiro.Application",
+            "projectName": "es.cesguiro-dws-injection"
+        },
+        {
+            "type": "java",
+            "name": "DwsLayersApplication",
+            "request": "launch",
+            "mainClass": "es.cesguiro.DwsLayersApplication",
+            "projectName": "es.cesguiro-dws-layers"
+        },
+        {
+            "type": "java",
+            "name": "DwsPersistenceApplication",
+            "request": "launch",
+            "mainClass": "es.cesguiro.DwsPersistenceApplication",
+            "projectName": "es.cesguiro-dws-persistence"
+        },
+        {
+            "type": "java",
+            "name": "DwsPresentationApplication",
+            "request": "launch",
+            "mainClass": "es.cesguiro.DwsPresentationApplication",
+            "projectName": "es.cesguiro-dws-presentation",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49861 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=es.cesguiro-dws-presentation"
+        },
+        {
+            "type": "java",
+            "name": "BookstoreApplication",
+            "request": "launch",
+            "mainClass": "fpmislata.bookstore.BookstoreApplication",
+            "projectName": "fpmislata-bookstore"
+        }
+    ]
+}

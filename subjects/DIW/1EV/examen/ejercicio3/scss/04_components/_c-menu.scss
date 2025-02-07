@@ -1,0 +1,46 @@
+$layout: $layouts;
+
+.c-menu {
+    display: flex;
+
+    @each $layout in $layouts {
+        &--#{$layout}{
+            @if (#{$layout} == "left"){
+                .c-menu__help {
+                    margin-right: var(--margin-auto);
+                }
+            }
+            @if ("#{$layout}" == "1-3"){
+                .c-menu__signin {
+                    margin-left: var(--margin-auto);
+                }
+            }
+            @if ("#{$layout}" == "2-2") {
+                .c-menu__signin {
+                    margin-right: var(--margin-auto);
+                }
+            }
+            @if ("#{$layout}" == "1-1-2") {
+                .c-menu__signin {
+                    margin-right: var(--margin-auto);
+                    margin-left: var(--margin-auto);
+                }
+            }
+            @if ("#{$layout}" == "right") {
+                .c-menu__file{
+                    margin-left: var(--margin-auto);
+                }
+            }
+            @if ("#{$layout}" == "3-1") {
+                .c-menu__login{
+                    margin-right: var(--margin-auto);
+                }
+            }
+            @else {
+                // .c-menu {
+                //     margin: var(--margin-l);
+                // }
+            }
+        } 
+    }
+}

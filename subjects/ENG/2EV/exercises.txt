@@ -1,0 +1,150 @@
+Unit 9 {
+
+    Page 78 {
+
+        1 {
+            a -> Database Administrator
+            b -> IT teacher
+            c -> IT support officer
+            d -> Developer
+            e -> Network administrator
+            f -> Webmaster
+            g -> Hardware enngineer
+            h -> Software Engineer
+            i -> Computer security specialist
+            j -> Project Manager
+        }
+    }
+
+    Page 79 {
+        4 {
+            a -> Communication
+            b -> Electronics
+            c -> Telematics
+        }
+    }
+
+    Page 81 {
+        3 {
+            a -> troubleshoot
+            b -> otpimise
+            c -> meet requirements
+            d -> bachelor
+            e -> hold
+
+        }
+    }
+
+    Page 82 {
+        3 {
+            a -> Im leaving tomorrow, she said.
+            b -> I got married last year, Danny said.
+            c -> I will come and help you tomorrow, Veronika said.
+            d -> I haven't installed the antivirus, Liz said.
+            e -> We don't want to go to bead, the children said.
+            f -> The king is going to abdicate this evening, the reporter said.
+        }
+    }
+
+    Page 83 {
+        4 {
+            a -> My mother asked me to tidy up my room that day.
+            b -> Anne asked me to buy a present for daddy's birthday that afternoon.
+            c -> Megan told me to read that book because it's very interesting.
+            d -> The teachers asked us not to smoke in the school.
+            e -> The IT worker told me not to install two different antivirus programs on the same computer.
+        }
+
+        5{
+            a -> She asked me what an operating systems consisted of.
+            b -> She asked me why I got home so late the night before.
+            c -> She asked me if I had been to Paris.
+            d -> She asked me how often I visited my parents.
+            e -> She asked me if I had studied reported speech before.
+            f -> She asked me if I would come later.
+        }
+    }
+
+    Page 84 {
+        1 {
+            a -> Agriculture and computer science
+            b -> farms, cultivations, wine cellars
+            c -> birth, death, diseases, labors
+            d -> satellites
+            e -> translate the programs in spanish
+            f -> accounting, human resources, technical support, marketing department, managment department, product
+            g -> Belgium, Romania, Morocco
+        }
+        2 {
+            a -> False It is a program which helps people find jobs
+            b -> True
+            c -> True
+            d -> True
+            e -> False there are more than 30 workers
+            f -> True
+        }
+    }
+
+    Page 89 {
+        2 {
+            a -> salary
+            b -> single
+            c -> recruitment
+            d -> entails
+            e -> unconveivable
+            f -> aim
+            g -> rude
+            h -> trendy
+        }
+    }
+
+    Page 90 {
+        3 {
+            a -> job-hunt
+            a -> abroad
+            a -> bear in mind
+            a -> background
+            a -> looks
+        }
+    }
+
+    Page 91 {
+        1 {
+            a -> are you applying
+            b -> I've sent a lot of CVs so far but I haven't received any calls yet.
+            c -> I'm finishing
+            d -> Do you like
+            e -> doesn't think
+        }
+        2 {
+            a -> was waiting, called
+            b -> arrived, had already finished
+            c -> said, she had worked 
+            d -> came, knew
+            e -> didn't get, didn't have enough
+        }
+        3 {
+            a -> are you going to wear, am going to play
+            b -> will be
+            c -> are going to talk
+            d -> will definitely be 
+            e -> are going to spill
+        }
+        4 {
+            a -> She explained that she was responsible for providing logisitical support.
+            b -> The interviewer asked why i had left my last job.
+            c -> she said she had worked as a shop assistant for thirty years.
+            d -> he asked what my salary expectations were.
+            e -> She told me they will/would call me for a second interview.
+            f -> She asked me if I worked well under pressure.
+        }
+        5 {
+            a -> don't change
+            b -> hadn't told tell
+            c -> would stand out
+            d -> was
+            e -> would
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+$nombre-colores: map-get($set-colores, "nombre-colores");
+$colores: map-get($set-colores, "colores");
+
+:root {
+
+    @each $color, $values in $colores {
+        @for $i from 1 through length($nombre-colores) {
+            @if (nth($nombre-colores, $i)=="") {
+                --color-#{$color}: #{nth($values, $i)};
+            }
+
+            @else {
+
+                --color-#{$color}-#{nth($nombre-colores, $i)}: #{nth($values, $i)};
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// --color-nombreColor-tonalidad: codigoColor;` 

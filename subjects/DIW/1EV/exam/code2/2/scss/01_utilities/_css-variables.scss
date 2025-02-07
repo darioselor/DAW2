@@ -1,0 +1,19 @@
+:root {
+    @each $componente, $propiedad in $colores-componentes {
+        $index: 1;
+
+        @each $key, $values in $propiedad {
+            @if ($modo_oscuro ==true) {
+                $index : 2;
+            }
+
+            --color-#{$key}-#{$componente}: #{
+nth($values, $index)
+        }
+
+        ;
+    }
+}
+}
+
+// `--color-key-component: value;`

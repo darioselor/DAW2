@@ -1,0 +1,25 @@
+.l-page {
+  display: grid;
+  grid-template-areas: "header header header header header" "nav content content content content" "footer footer footer footer footer";
+}
+.l-page--right {
+  grid-template-areas: "header header header header header" "content content content content nav" "footer footer footer footer footer";
+}
+.l-page__header {
+  grid-area: header;
+  background-color: aqua;
+}
+.l-page__nav {
+  grid-area: nav;
+  background-color: azure;
+}
+.l-page__content {
+  grid-area: content;
+  background-color: burlywood;
+}
+.l-page__footer {
+  grid-area: footer;
+  background-color: chartreuse;
+}
+
+/*# sourceMappingURL=styles.css.map */
