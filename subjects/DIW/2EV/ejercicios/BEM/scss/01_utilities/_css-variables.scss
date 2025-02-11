@@ -5,3 +5,13 @@
 //         --border-#{$name}: #{$value}px;
 //     }
 // }
+
+:root {
+    @each $name, $code in $colors {
+        $cont:10;
+        @each $c in $code {
+            --#{$name}-#{$cont}: #{$c};
+            $cont: $cont+10;
+        }
+    }
+}
