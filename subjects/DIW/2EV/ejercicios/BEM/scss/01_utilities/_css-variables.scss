@@ -5,3 +5,12 @@
 //         --border-#{$name}: #{$value}px;
 //     }
 // }
+
+:root {
+
+    @each $name, $value in $colors {
+        @for $i from 1 through 10 {
+            --color-#{$name}-$i: #
+        }
+    }
+}
