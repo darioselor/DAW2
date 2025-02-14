@@ -1,0 +1,70 @@
+:root {
+  --color-red: #ea333d;
+  --color-green: #3fea33;
+  --color-yellow: #eac533;
+  --padding-xs: 10px;
+  --padding-s: 250px;
+  --padding-m: 50px;
+  --padding-l: 80px;
+  --padding-xl: 125px;
+}
+
+@keyframes animacion-subir-50 {
+  100% {
+    transform: translate(0, -50px);
+  }
+}
+@keyframes animacion-subir-100 {
+  0% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    transform: translate(0, -100px);
+  }
+}
+.c-body {
+  padding: var(padding-xl);
+}
+
+.c-box {
+  width: 100px;
+  height: 100px;
+}
+@media (min-width: 500px) {
+  .c-box--active {
+    animation-name: animacion-subir-50;
+    animation-duration: 3s;
+  }
+}
+@media (min-width: 800px) {
+  .c-box--active {
+    animation-name: animacion-subir-100;
+    animation-duration: 3s;
+  }
+}
+
+.c-box--C1 {
+  background-color: var(--color-red);
+}
+
+.c-box--C2 {
+  background-color: var(--color-green);
+}
+
+.c-box--C3 {
+  background-color: var(--color-yellow);
+}
+
+.g-display-flex {
+  display: flex;
+}
+
+.g-display-block {
+  display: block;
+}
+
+.g-display-inline-block {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=main.css.map */

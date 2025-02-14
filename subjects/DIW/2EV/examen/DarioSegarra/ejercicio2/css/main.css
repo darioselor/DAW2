@@ -1,0 +1,338 @@
+@keyframes animation-T {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 150px);
+  }
+  40% {
+    transform: translate(-150px, 150px);
+  }
+  60% {
+    transform: translate(150px, 150px);
+  }
+  80% {
+    transform: translate(0, 150px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes animation-G {
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.c-cuadrado {
+  width: 200px;
+  height: 200px;
+  margin-top: 400px;
+  margin-left: 300px;
+  display: inline-block;
+  background-color: rgb(0, 145, 255);
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+.c-cuadrado--animation-T {
+  animation-name: animation-T;
+}
+
+.c-cuadrado--animation-G {
+  animation-name: animation-G;
+}
+
+.c-cuadrado--duration-1 {
+  animation-duration: 1s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-1\@tablet {
+    animation-duration: 1s;
+  }
+}
+
+.c-cuadrado--duration-1 {
+  animation-duration: 1s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-1\@desktop {
+    animation-duration: 1s;
+  }
+}
+
+.c-cuadrado--duration-1 {
+  animation-duration: 1s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-1\@fulldesktop {
+    animation-duration: 1s;
+  }
+}
+
+.c-cuadrado--duration-2 {
+  animation-duration: 2s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-2\@tablet {
+    animation-duration: 2s;
+  }
+}
+
+.c-cuadrado--duration-2 {
+  animation-duration: 2s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-2\@desktop {
+    animation-duration: 2s;
+  }
+}
+
+.c-cuadrado--duration-2 {
+  animation-duration: 2s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-2\@fulldesktop {
+    animation-duration: 2s;
+  }
+}
+
+.c-cuadrado--duration-3 {
+  animation-duration: 3s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-3\@tablet {
+    animation-duration: 3s;
+  }
+}
+
+.c-cuadrado--duration-3 {
+  animation-duration: 3s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-3\@desktop {
+    animation-duration: 3s;
+  }
+}
+
+.c-cuadrado--duration-3 {
+  animation-duration: 3s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-3\@fulldesktop {
+    animation-duration: 3s;
+  }
+}
+
+.c-cuadrado--duration-4 {
+  animation-duration: 4s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-4\@tablet {
+    animation-duration: 4s;
+  }
+}
+
+.c-cuadrado--duration-4 {
+  animation-duration: 4s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-4\@desktop {
+    animation-duration: 4s;
+  }
+}
+
+.c-cuadrado--duration-4 {
+  animation-duration: 4s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-4\@fulldesktop {
+    animation-duration: 4s;
+  }
+}
+
+.c-cuadrado--duration-5 {
+  animation-duration: 5s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-5\@tablet {
+    animation-duration: 5s;
+  }
+}
+
+.c-cuadrado--duration-5 {
+  animation-duration: 5s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-5\@desktop {
+    animation-duration: 5s;
+  }
+}
+
+.c-cuadrado--duration-5 {
+  animation-duration: 5s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-5\@fulldesktop {
+    animation-duration: 5s;
+  }
+}
+
+.c-cuadrado--duration-6 {
+  animation-duration: 6s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-6\@tablet {
+    animation-duration: 6s;
+  }
+}
+
+.c-cuadrado--duration-6 {
+  animation-duration: 6s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-6\@desktop {
+    animation-duration: 6s;
+  }
+}
+
+.c-cuadrado--duration-6 {
+  animation-duration: 6s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-6\@fulldesktop {
+    animation-duration: 6s;
+  }
+}
+
+.c-cuadrado--duration-7 {
+  animation-duration: 7s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-7\@tablet {
+    animation-duration: 7s;
+  }
+}
+
+.c-cuadrado--duration-7 {
+  animation-duration: 7s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-7\@desktop {
+    animation-duration: 7s;
+  }
+}
+
+.c-cuadrado--duration-7 {
+  animation-duration: 7s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-7\@fulldesktop {
+    animation-duration: 7s;
+  }
+}
+
+.c-cuadrado--duration-8 {
+  animation-duration: 8s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-8\@tablet {
+    animation-duration: 8s;
+  }
+}
+
+.c-cuadrado--duration-8 {
+  animation-duration: 8s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-8\@desktop {
+    animation-duration: 8s;
+  }
+}
+
+.c-cuadrado--duration-8 {
+  animation-duration: 8s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-8\@fulldesktop {
+    animation-duration: 8s;
+  }
+}
+
+.c-cuadrado--duration-9 {
+  animation-duration: 9s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-9\@tablet {
+    animation-duration: 9s;
+  }
+}
+
+.c-cuadrado--duration-9 {
+  animation-duration: 9s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-9\@desktop {
+    animation-duration: 9s;
+  }
+}
+
+.c-cuadrado--duration-9 {
+  animation-duration: 9s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-9\@fulldesktop {
+    animation-duration: 9s;
+  }
+}
+
+.c-cuadrado--duration-10 {
+  animation-duration: 10s;
+}
+@media (min-width: 500px) {
+  .c-cuadrado--duration-10\@tablet {
+    animation-duration: 10s;
+  }
+}
+
+.c-cuadrado--duration-10 {
+  animation-duration: 10s;
+}
+@media (min-width: 800px) {
+  .c-cuadrado--duration-10\@desktop {
+    animation-duration: 10s;
+  }
+}
+
+.c-cuadrado--duration-10 {
+  animation-duration: 10s;
+}
+@media (min-width: 1000px) {
+  .c-cuadrado--duration-10\@fulldesktop {
+    animation-duration: 10s;
+  }
+}
+
+.c-cuadrado--velocidad-linear {
+  animation-timing-function: "linear";
+}
+
+.c-cuadrado--velocidad-ease {
+  animation-timing-function: "ease";
+}
+
+.c-cuadrado--velocidad-ease-in {
+  animation-timing-function: "ease-in";
+}
+
+.c-cuadrado--velocidad-ease-out {
+  animation-timing-function: "ease-out";
+}
+
+.c-cuadrado--velocidad-ease-in-out {
+  animation-timing-function: "ease-in-out";
+}
+
+/*# sourceMappingURL=main.css.map */

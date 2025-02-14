@@ -1,0 +1,54 @@
+:root {
+  --color-red: #ea333d;
+  --color-green: #3fea33;
+  --color-yellow: #eac533;
+}
+
+@keyframes animacion-subir-50 {
+  100% {
+    transform: translate(0, -50px);
+  }
+}
+@keyframes animacion-subir-100 {
+  0% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    transform: translate(0, -100px);
+  }
+}
+.c-body {
+  padding: 125px;
+}
+
+.c-box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+@media (min-width: 500px) {
+  .c-box--active {
+    animation-name: animacion-subir-50;
+    animation-duration: 3s;
+  }
+}
+@media (min-width: 800px) {
+  .c-box--active {
+    animation-name: animacion-subir-100;
+    animation-duration: 3s;
+  }
+}
+
+.c-box--C1 {
+  background-color: var(--color-red);
+}
+
+.c-box--C2 {
+  background-color: var(--color-green);
+}
+
+.c-box--C3 {
+  background-color: var(--color-yellow);
+}
+
+/*# sourceMappingURL=main.css.map */

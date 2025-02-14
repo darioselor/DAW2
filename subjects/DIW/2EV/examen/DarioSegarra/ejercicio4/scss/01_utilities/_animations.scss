@@ -1,0 +1,15 @@
+@keyframes animacion-subir-50 {
+    0%{
+    }
+    100%{
+        transform: translate(0,-50px);
+    }
+}
+@keyframes animacion-subir-100 {
+    0%{
+        transform:translate(0,-50px)
+    }
+    100%{
+        transform: translate(0,-100px);
+    }
+}

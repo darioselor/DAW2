@@ -1,0 +1,29 @@
+$box-colors:(
+    "C1": "red",
+    "C2": "green",
+    "C3": "yellow"
+);
+
+.c-box{
+    width: 100px;
+    height: 100px;
+    
+
+    &--active{
+        @media (min-width: 500px) {
+            animation-name: animacion-subir-50;
+            animation-duration: 3s;
+        }
+        @media (min-width:800px) {
+            animation-name: animacion-subir-100;
+            animation-duration: 3s;
+        }
+    }
+}
+@each $key, $color in $box-colors {
+
+    .c-box--#{$key}{
+        background-color: var(--color-#{$color});
+    }
+}
+

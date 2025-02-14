@@ -1,0 +1,5 @@
+@each $type in $displayType {
+    .g-display-#{$type}{
+        display: #{$type};
+    }
+}
