@@ -1,0 +1,16 @@
+@use "./scss-variables" as *;
+@use "sass:list";
+
+:root {
+    @each $colores-componentes-key, $colores-componentes-value in $colores-componentes {
+        @each $property, $color-codes in $colores-componentes-value {
+            $index: 1;
+
+            @if ($modo_oscuro ==true) {
+                $index: 2;
+            }
+
+            --color-#{$colores-componentes-key}-#{$property}: #{list.nth($color-codes,$index)};
+        }
+    }
+}
