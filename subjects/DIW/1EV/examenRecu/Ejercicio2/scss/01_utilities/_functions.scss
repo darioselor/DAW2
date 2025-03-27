@@ -1,0 +1,20 @@
+@function getColor($color, $style){
+
+        $colorsList: map-get($borders, "colors");
+
+        @each $name, $style in $colorsList{
+            @if $name == $color{
+                $colorpicked: map-get($colors, $color);
+                @if $style == "normal"{
+                    @return $colorpicked;
+                }
+                @if $style =="claro"{
+                    $colorClaro: lighten($colorpicked,30%);
+                    @return $colorClaro;
+                }
+                @if $style =="oscuro"{
+                    $colorOscuro: darken($colorpicked,30%);
+                }
+            }
+        }
+    }

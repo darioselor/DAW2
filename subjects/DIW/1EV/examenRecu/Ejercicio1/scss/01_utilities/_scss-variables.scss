@@ -1,0 +1,96 @@
+$colors: (
+    "blue":"#309bff",
+    "grey": "#3c3c3c",
+    "white": "#ffffff"
+);
+
+$borders: (
+    "none": 0,
+    "3xs": 1,
+    "2xs": 2,
+    "xs": 3,
+    "s": 4,
+    "m": 5,
+    "l": 6,
+    "xl": 8,
+    "2xl": 10,
+    "3xl": 12
+);
+$border-radius: (
+    "none": 0,
+    "3xs": 2,
+    "2xs": 4,
+    "xs": 6,
+    "s": 8,
+    "m": 12,
+    "l": 16,
+    "xl": 24,
+    "2xl": 30,
+    "3xl": 36,
+    "full": 9999
+);
+$fonts: (
+    "body": "Arial, sans-serif",
+    "heading": "Georgia, serif",
+    "monospace": "'Courier New', monospace",
+    "secondary": "'Helvetica Neue', sans-serif",
+    "display": "'Impact', sans-serif",
+    "cursive": "'Comic Sans MS', cursive"
+);
+$font-size: (
+    "5xs": 6,
+    "4xs": 8,
+    "3xs": 10,
+    "2xs": 12,
+    "xs": 14,
+    "s": 16,
+    "m": 18,
+    "l": 20,
+    "xl": 24,
+    "2xl": 36,
+    "3xl": 38,
+    "4xl": 48,
+    "5xl": 60
+);
+$margins: (
+    "none": 0,
+    "3xs": 2,
+    "2xs": 4,
+    "xs": 6,
+    "s": 8,
+    "m": 10,
+    "l": 12,
+    "xl": 16,
+    "2xl": 24,
+    "3xl": 36,
+    "4xl": 46,
+    "5xl": 60
+);
+$paddings: (
+    "none": 0,
+    "3xs": 2,
+    "2xs": 4,
+    "xs": 6,
+    "s": 8,
+    "m": 10,
+    "l": 12,
+    "xl": 16,
+    "2xl": 24,
+    "3xl": 36,
+    "4xl": 46,
+    "5xl": 60
+);
+$widths: (
+    "none": 0,
+    "3xs": 2,
+    "2xs": 4,
+    "xs": 6,
+    "s": 8,
+    "m": 10,
+    "l": 12,
+    "xl": 16,
+    "2xl": 24,
+    "3xl": 36,
+    "4xl": 46,
+    "5xl": 60
+);

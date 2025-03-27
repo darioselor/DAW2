@@ -1,2 +1,0 @@
-Primero se crean los modelos en la capa de dominio.
-Se hacen los controladores.

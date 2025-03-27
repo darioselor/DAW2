@@ -1,0 +1,17 @@
+$modifierName: map-get($borders, "modifier-name");
+$sizes: map-get($borders, "sizes");
+$styles: map-get($borders, "styles");
+$colorCombs: map-get($borders, "colors");
+
+@each $colorComb in $colorCombs {
+    $colorName: nth($colorComb, 1);
+    $colorStyle: nth($colorComb, 2);
+    @each $size in $sizes {
+        @each $style in $styles{
+            .#{$modifierName}-#{$size}-#{$style}-#{$colorName}-#{$colorStyle}{
+                border: #{$style} #{$size}px;
+                border-color: getColor($colorName, $colorStyle);
+            }
+        }
+    }
+}

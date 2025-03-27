@@ -1,0 +1,33 @@
+:root{
+    @each $name, $value in $colors{
+        --#{$name}: #{$value};
+    }
+
+    @each $name, $value in $borders {
+        --border-#{$name}: #{$value}px;
+    }
+
+    @each $name, $value in $border-radius {
+        --border-radius-#{$name}: #{$value}px;
+    }
+
+    @each $name, $value in $fonts {
+        --font-#{$name}: #{$value};
+    }
+
+    @each $name, $value in $font-size {
+        --font-size-#{$name}: #{$value}px;
+    }
+
+    @each $name, $value in $margins {
+        --margin-#{$name}: #{$value}px;
+    }
+
+    @each $name, $value in $paddings {
+        --padding-#{$name}: #{$value}px;
+    }
+    
+    @each $name, $value in $widths {
+        --width-#{$name}: #{$value}px;
+    }
+}
