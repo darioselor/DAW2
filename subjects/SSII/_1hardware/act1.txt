@@ -1,0 +1,175 @@
+1. Justifica si els següents números estan expressants d manera correcta en la seua respetciva base:
+
+a. Está bien expresado
+b. No está bien expresado porqué el sistema binario solo cuenta con 0s y 1s
+c. No está bien expresado porqué el sistema de base 5 no puede tener un 8
+d. Está bien expresado.
+e. No está bien expresado porqué en el sistema hexadecimal la última letra es la F.
+f. Está bien expresado.
+g. No está bien expresado porqué el sistema binario solo cuenta con 0s y 1s
+h. No está bien expresado porqué el sistema octal el número 8 no existe.
+i. Está bien expresado.
+j. No está bien expresado porqué en el sistema octal no existen los números G y C
+
+
+2. Mostra els 10 números anteriors i posteriors als següents números, realitza l'exercici en vertical:
+
+
+110100001	5460	ab29
+110100010	5461	ab2a
+110100011	5462	ab2b
+110100100	5463	ab2c	
+110100101	5464	ab2d
+110100110	5465	ab2e
+110100111	5466	ab2f
+110101000	5467	ab30	
+110101001	5470	ab31
+110101010	5471	ab32
+110101011(2)	5372(8)	ab33(16)
+110101100	5373	ab34
+110101101	5374	ab35
+110101110	5375	ab36	
+110101111	5376	ab38
+110110000	5377	ab39
+110110001	5400	ab3a
+110110010	5401	ab3b
+110110011	5402	ab3c
+110110100	5403	ab4d
+110110101	5404	ab4e
+
+3. Converteix a la resta de bases:
+
+255(10)		r:1	101010011 
+127		r:1
+84		r:0
+42		r:0
+21		r:1
+10		r:0
+5		r:1
+2		r:0
+1		r:1
+
+101.010.011		523
+0001.0101.0011		153
+-----------------------------------
+1728(10)	r:0	11110000000
+864		r:0
+432		r:0
+216		r:0
+108		r:0
+54		r:0
+27		r:0
+13		r:1
+6		r:1
+3		r:1
+1		r:1	
+
+011.110.000.000		3600
+0111.1000.0000		780
+-----------------------------------
+11001110101(2)		1653
+1		+
+4		+
+16		+
+32		+
+64 		+
+512 		+
+1024 		+
+
+011.001.110.101		3165
+0110.0111.0101		675
+-----------------------------------
+10101010101(2)		1365
+1		+
+4		+
+16		+
+64		+
+256		+
+1024		+
+
+010.101.010.101		2525
+0101.0101.0101		555	
+-----------------------------------
+751(8)		
+111101001		489
+1		+
+8		+
+32		+
+64		+
+128		+
+256		+
+
+111.101.001		751
+0001.1110.1001		1e9
+-----------------------------------
+681(8)
+No se puede hacer ya que el 8 no 
+existe en base octal.
+-----------------------------------
+AFE(16)
+101011111110		2814
+2		+
+4		+
+8		+
+16		+
+32		+
+64		+
+128		+
+512		+
+2048		+
+
+101.011.111.110		5376
+1010.1111.1110		afe
+-----------------------------------
+9FB1(16)
+1001111110110001	40881
+1		+
+16		+
+32		+
+128		+
+256		+
+512		+
+1024		+
+2048		+	
+4096		+
+32768		+
+
+001.001.111.110.110.001	117661
+1001.1111.1011.0001	9fb1	
+
+4. Calcula les següents operacions binàries, mostra tot el procés:
+
+10011+1011=
+
+10011
+01011
+-----
+11110
+
+101+10101=
+
+10101
+00101
+-----
+11010
+
+11100+1011=
+
+011100
+001011
+------
+100111
+
+10011-101=
+
+10011
+00101
+-----
+01110
+
+1101-111=
+
+1101
+0111
+----
+0110
