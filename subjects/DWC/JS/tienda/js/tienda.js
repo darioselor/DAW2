@@ -1,5 +1,6 @@
 	criterios=["Sin ordenar","Ascendente por precio", "Descendente por precio"]
-	
+	let cart;
+	let dialog;
 	function creaListaCriterios(){
 		
 	}
@@ -8,8 +9,10 @@
 	function pintaArticulos(){
 		let articulosDiv = document.getElementById("contenedor");
 		listaArticulos.forEach(a => {
+			
 			let articulo = document.createElement("div");
 			articulo.className= `card`;
+			
 			let imagen = document.createElement("img");
 			imagen.id = a.codigo;
 			imagen.src = `assets/${a.codigo}.jpg`;
@@ -18,11 +21,10 @@
 			let cardBody = document.createElement("div");
 			cardBody.className=`card-body`;
 
-			
-
 			let nombre = document.createElement("h5");
 			nombre.innerHTML=`${a.nombre}`;
 			nombre.className=`card-title`;
+
 			let descripcion = document.createElement("p");
 			descripcion.innerHTML=`${a.descripcion}`;
 			descripcion.className=`card-text`;
@@ -37,6 +39,7 @@
 			botonComprar.id = a.codigo;
 			botonComprar.className=`btn-success`
 			botonComprar.innerHTML=`comprar`
+			botonComprar.addEventListener("click", () => ponArticuloEnCarrito(a.codigo))
 
 			articulo.appendChild(imagen);
 			articulo.appendChild(cardBody);
@@ -48,24 +51,33 @@
 			
 			articulosDiv.appendChild(articulo);
 		});
-
 	}
 	
 	
-	function ponArticuloEnCarrito(){
-		
+	function ponArticuloEnCarrito(codigo){
+		let articulo = listaArticulos.find(a => a.codigo == codigo);
+		cart.anyadeArticulo(articulo);
 	}
 
 
 	function verCarro(){
-	
+		cart.verCarrito();
 	}
-
+	
 	function efectuaPedido(){
-	
+		
 	}
-
+	
 	window.onload=()=>{
+		
+		let iconoCarrito = document.getElementsByTagName("img")[0];
+		dialog = document.getElementById("miDialogo");
+		const btnCierraDialog = document.getElementById("btnCierraDialog");
+		const btnEfectuaPedido = document.getElementById("btnEfectuaPedido");
+
+		iconoCarrito.addEventListener("click", verCarro);
+		cart = new Carrito(1);
 		pintaArticulos();
+		verCarro();
 	}
 
