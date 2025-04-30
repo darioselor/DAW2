@@ -9,35 +9,46 @@ class Carrito{
 	}
 
 	anyadeArticulo(articulo){
-		if (this.articulosCarrito.includes(articulo)) {
+		console.log(articulo);
+		
+		if (this.articulosCarrito.find(a => a.codigo === articulo.codigo)) {
 			this.modificaUnidades(articulo.codigo, 1);
 		} else {
 			let cantidad = 1;
 			let total = articulo.precio * cantidad;
-			this.articulosCarrito.push({articulo, cantidad, total});
-			console.log(this.articulosCarrito);
-			
+			this.articulosCarrito.push({...articulo, cantidad, total});
 		}
 		this.verCarrito();
 	}
 	
 	modificaUnidades(codigo,n){	
-		let articulo = this.articulosCarrito.find(a => a.codigo = codigo);
-		console.log("aquí también llega");
-		if (this.articulosCarrito.find(a => a.codigo=codigo)) {
-			if (n=1) {
-				a.cantidad =+ 1;
+		let articulo = this.articulosCarrito.find(a => a.codigo == codigo);
+		if (articulo) {
+			articulo.cantidad += n;
+			if (articulo.cantidad < 1) {
+				this.borraArticulo(articulo.codigo);
+			} else {
+				articulo.total = articulo.precio * articulo.cantidad
 			}
-			a.cantidad =- 1;
-			if (a.cantidad < 1){
-				this.borraArticulo(a.codigo);
-			}
-		}
+			articulo.toString();
+			this.verCarrito();
+		}	
 	}	
+	
+	borraArticulo(codigo){
+		let index = this.articulosCarrito.findIndex(a => a.codigo == codigo);
+				if (index !== -1) {
+					this.articulosCarrito.splice(index, 1);
+				}
+	}
 	verCarrito(){
-		console.log("Ha llegado hasta aquí!!");
+		let content;
+		let totalprecio = 0;
+		if (this.articulosCarrito.length==0) {
+			content=`Este carrito está vacío`;
+		} else {
 		
-		let content=`
+		content=`
 		<table>
 		<tr>
 		<td></td>
@@ -50,24 +61,28 @@ class Carrito{
 		</tr>
 		`;
 		
-		// Me llega al artículo únicamente el id
 		this.articulosCarrito.forEach(a => {
 			content += `
 			<tr>
-			<td><img src= "assets/${a.articulo.codigo}.jpg" alt="${a.articulo.nombre}" style="width: 100px;"></td>
-			<td>${a.articulo.nombre}</td>
-			<td>${a.articulo.descripcion}</td>
-			<td>${a.articulo.precio}</td>
+			<td><img src= "assets/${a.codigo}.jpg" alt="${a.nombre}" style="width: 100px;"></td>
+			<td>${a.nombre}</td>
+			<td>${a.descripcion}</td>
+			<td>${a.precio}</td>
 			<td>${a.cantidad}</td>
-			<td>${(a.articulo.precio*a.cantidad)}</td>
+			<td>${a.total}</td>
 			<td>
-			<button class="btn btn-primary" onclick="cart.modificaUnidades('${a.articulo.codigo}',1)">+</button>
-			<button class="btn btn-warning" onclick="cart.modificaUnidades('${a.articulo.codigo}',-1)">-</button>
-			<button class="btn btn-danger" onclick="cart.borraArticulo('${a.articulo.codigo}')">Delete</button></td>
+			<button class="btn btn-primary" onclick="cart.modificaUnidades('${a.codigo}',1)">+</button>
+			<button class="btn btn-warning" onclick="cart.modificaUnidades('${a.codigo}',-1)">-</button>
+			<button class="btn btn-danger" onclick="cart.borraArticulo('${a.codigo}')">Delete</button></td>
 			</tr>
 			`;
+			totalprecio = (totalprecio + a.total);
 		});
 		content += "</table>";
+		}
+		let totalSpan = document.getElementById("total");
+		totalSpan.innerHTML = totalprecio;
+		
 		let dialogBox = document.getElementById("dialogContent");
 		dialogBox.innerHTML = content;
 		dialog.showModal();

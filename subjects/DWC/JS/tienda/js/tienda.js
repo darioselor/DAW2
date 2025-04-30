@@ -1,6 +1,5 @@
 	criterios=["Sin ordenar","Ascendente por precio", "Descendente por precio"]
 	let cart;
-	let dialog;
 	function creaListaCriterios(){
 		
 	}
@@ -69,15 +68,15 @@
 	}
 	
 	window.onload=()=>{
-		
 		let iconoCarrito = document.getElementsByTagName("img")[0];
 		dialog = document.getElementById("miDialogo");
 		const btnCierraDialog = document.getElementById("btnCierraDialog");
+		btnCierraDialog.addEventListener("click", () => dialog.close());
+	
 		const btnEfectuaPedido = document.getElementById("btnEfectuaPedido");
 
 		iconoCarrito.addEventListener("click", verCarro);
 		cart = new Carrito(1);
 		pintaArticulos();
-		verCarro();
 	}
 
