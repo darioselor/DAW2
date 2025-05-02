@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.example.presentationLayer.common.exception.ResourceNotFoundException;
 import com.example.presentationLayer.domain.model.Book;
 import com.example.presentationLayer.domain.service.BookService;
 import com.example.presentationLayer.persistence.repository.BookRepository;
@@ -23,8 +24,9 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Optional<Book> findByIsbn(String isbn) {
-        return bookRepository.findByIsbn(isbn);
+    public Book findByIsbn(String isbn) {
+        return bookRepository.findByIsbn(isbn)
+                .orElseThrow(() -> new ResourceNotFoundException("Book isbn " + isbn + " not found"));
     }
 
 }
