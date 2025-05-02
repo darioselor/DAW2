@@ -30,7 +30,6 @@ class Carrito{
 			} else {
 				articulo.total = articulo.precio * articulo.cantidad
 			}
-			articulo.toString();
 			this.verCarrito();
 		}	
 	}	
@@ -40,6 +39,8 @@ class Carrito{
 				if (index !== -1) {
 					this.articulosCarrito.splice(index, 1);
 				}
+				this.verCarrito();
+
 	}
 	verCarrito(){
 		let content;

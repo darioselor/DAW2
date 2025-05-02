@@ -64,7 +64,15 @@
 	}
 	
 	function efectuaPedido(){
+		const pedido = {
+			"id" : cart.id,
+			"articulos": cart.articulosCarrito,
+			"total": cart.totalPrecio
+		};
+
+		console.log(pedido);
 		
+
 	}
 	
 	window.onload=()=>{
@@ -72,8 +80,9 @@
 		dialog = document.getElementById("miDialogo");
 		const btnCierraDialog = document.getElementById("btnCierraDialog");
 		btnCierraDialog.addEventListener("click", () => dialog.close());
-	
+		
 		const btnEfectuaPedido = document.getElementById("btnEfectuaPedido");
+		btnCierraDialog.addEventListener("click", () => efectuaPedido());
 
 		iconoCarrito.addEventListener("click", verCarro);
 		cart = new Carrito(1);
