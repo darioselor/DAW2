@@ -1,12 +1,20 @@
 package com.example.presentationLayer.common.error;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+import com.example.presentationLayer.common.exception.ResourceNotFoundException;
+
 @ControllerAdvice
 public class ApiExceptionHandler {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler({ ResourceNotFoundException.class })
-    @ResponeBody
-    public ErrorMessage notFoundRequest(ResourceNOtFoundException exception) {
+    @ResponseBody
+    public ErrorMessage notFoundRequest(ResourceNotFoundException exception) {
         return new ErrorMessage(exception);
     }
 

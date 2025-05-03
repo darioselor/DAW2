@@ -1,5 +1,8 @@
 package com.example.presentationLayer.common.error;
 
+import lombok.Getter;
+import lombok.ToString;
+
 @Getter
 @ToString
 public class ErrorMessage {
