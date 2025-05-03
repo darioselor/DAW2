@@ -1,13 +1,30 @@
 	criterios=["Sin ordenar","Ascendente por precio", "Descendente por precio"]
 	let cart;
 	function creaListaCriterios(){
-		
+		let selectCriterios = document.getElementById("criteriosOrdenacion");
+		let cont=0;
+		let content = "";
+		criterios.forEach(criterio => {
+			content += `<option value=${cont}>${criterio}</option>`;
+			cont += 1;
+		});
+		selectCriterios.innerHTML=content;
 	}
 
 
-	function pintaArticulos(){
-		let articulosDiv = document.getElementById("contenedor");
-		listaArticulos.forEach(a => {
+	function pintaArticulos(criterio){
+		const articulosDiv = document.getElementById("contenedor");
+		articulosDiv.innerHTML = "";
+		console.log(`Pintados con el criterio ${criterio}`);
+		let copiaListaArtculos = listaArticulos.slice();
+		if (criterio == 1) {
+			copiaListaArtculos.sort((a,b)=> a.price - b.price);
+		}
+		if (criterio == 2) {
+			copiaListaArtculos.sort((a,b)=> b.price - a.price);
+		}
+
+		copiaListaArticulos.forEach(a => {
 			
 			let articulo = document.createElement("div");
 			articulo.className= `card`;
@@ -52,12 +69,10 @@
 		});
 	}
 	
-	
 	function ponArticuloEnCarrito(codigo){
 		let articulo = listaArticulos.find(a => a.codigo == codigo);
 		cart.anyadeArticulo(articulo);
 	}
-
 
 	function verCarro(){
 		cart.verCarrito();
@@ -69,23 +84,30 @@
 			"articulos": cart.articulosCarrito,
 			"total": cart.totalPrecio
 		};
-
 		console.log(pedido);
-		
-
+		console.log("Pedido efectuado!");
+		dialog.close();
 	}
 	
 	window.onload=()=>{
 		let iconoCarrito = document.getElementsByTagName("img")[0];
+		iconoCarrito.addEventListener("click", verCarro);
 		dialog = document.getElementById("miDialogo");
 		const btnCierraDialog = document.getElementById("btnCierraDialog");
 		btnCierraDialog.addEventListener("click", () => dialog.close());
 		
 		const btnEfectuaPedido = document.getElementById("btnEfectuaPedido");
-		btnCierraDialog.addEventListener("click", () => efectuaPedido());
+		btnEfectuaPedido.addEventListener("click", () => efectuaPedido());
+		
+		creaListaCriterios();
+		let selectCriterios = document.getElementById("criteriosOrdenacion").onchange = function () {
+			let valor = this.value;
+			pintaArticulos(valor);
+		}; 
 
-		iconoCarrito.addEventListener("click", verCarro);
+		pintaArticulos(0);
 		cart = new Carrito(1);
-		pintaArticulos();
+
+		
 	}
 
