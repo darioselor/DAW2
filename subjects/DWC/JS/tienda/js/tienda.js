@@ -15,15 +15,15 @@
 	function pintaArticulos(criterio){
 		const articulosDiv = document.getElementById("contenedor");
 		articulosDiv.innerHTML = "";
-		console.log(`Pintados con el criterio ${criterio}`);
-		let copiaListaArtculos = listaArticulos.slice();
+		let copiaListaArticulos = listaArticulos.slice();
 		if (criterio == 1) {
-			copiaListaArtculos.sort((a,b)=> a.price - b.price);
+			copiaListaArticulos.sort((a,b)=> a.precio - b.precio);
 		}
 		if (criterio == 2) {
-			copiaListaArtculos.sort((a,b)=> b.price - a.price);
+			copiaListaArticulos.sort((a,b)=> b.precio - a.precio);
 		}
-
+		console.log(copiaListaArticulos);
+		
 		copiaListaArticulos.forEach(a => {
 			
 			let articulo = document.createElement("div");
@@ -59,11 +59,13 @@
 
 			articulo.appendChild(imagen);
 			articulo.appendChild(cardBody);
+			articulo.appendChild(botonComprar);
+			
 			cardBody.appendChild(nombre);
 			cardBody.appendChild(descripcion);
 			cardBody.appendChild(b);
+			
 			b.appendChild(precio);
-			articulo.appendChild(botonComprar);
 			
 			articulosDiv.appendChild(articulo);
 		});
