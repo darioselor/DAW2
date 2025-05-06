@@ -16,22 +16,24 @@ window.onload=()=>{
     const botonBorrarArticulo = document.getElementById("borrarArticulo");
     botonBorrarArticulo.addEventListener("click", borrarArticulo);
     
-    // Container
-    const divContainer = document.getElementById("container");
-    
     // URL base de datos JSON
-    const URL = "https://github.com/darioselor/DAW2/blob/develop/subjects/DWC/js/async/crudXHR/empresa.json";
+    
+    // DOM ELEMENTS
 }
 
+
 function verArticulos(){
+    let divContainer = document.getElementById("container");
+    const URL = "empresa.json";
     
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", URL)
+    xhr.open("get", URL)
     xhr.responseType='json'
     xhr.send()
-    xhr.onload = function () {
-        let content;
-        xhr.response.articulo.forEach(articulo => {
+    let content;
+    xhr.onload = ()=>{        
+        content = "";
+        xhr.response.articulos.forEach(articulo => {
             content += `
             <div>
                 <span>
@@ -51,9 +53,10 @@ function verArticulos(){
                 </div>
             </div>  
             `;
-        });
-        divContainer.innerHTML=content;
+        });        
+        divContainer.innerHTML = content;
     }
+    
 }
 
 function verArticulo(){
