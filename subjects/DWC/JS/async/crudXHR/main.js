@@ -53,7 +53,7 @@ function verArticulos(){
                 </div>
             </div>  
             `;
-        });        
+        });
         divContainer.innerHTML = content;
     }
     
