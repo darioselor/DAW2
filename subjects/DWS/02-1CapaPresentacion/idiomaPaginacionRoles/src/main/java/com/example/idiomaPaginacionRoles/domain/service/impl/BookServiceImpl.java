@@ -18,8 +18,13 @@ public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
 
     @Override
-    public List<Book> findAll() {
-        return bookRepository.findAll();
+    public List<Book> findAll(int page, int size) {
+        return bookRepository.findAll(page, size);
+    }
+
+    @Override
+    public int count() {
+        return bookRepository.count();
     }
 
     @Override

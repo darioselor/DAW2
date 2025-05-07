@@ -3,6 +3,7 @@ package com.example.idiomaPaginacionRoles.persistence.repository.impl.jdbc.mappe
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.example.idiomaPaginacionRoles.controller.locale.LanguageUtils;
 import com.example.idiomaPaginacionRoles.domain.model.Book;
 
 public class BookRowMapper implements CustomRowMapper<Book> {
@@ -12,10 +13,11 @@ public class BookRowMapper implements CustomRowMapper<Book> {
 
     @Override
     public Book mapRow(ResultSet rs, int rowNum) throws SQLException {
+        String language = LanguageUtils.getCurrentLenguage();
         Book book = new Book();
         book.setIsbn(rs.getString("books.isbn"));
-        book.setTitle(rs.getString("books.title_es"));
-        book.setSynopsis(rs.getString("books.synopsis_es"));
+        book.setTitle(rs.getString("books.title_" + language));
+        book.setSynopsis(rs.getString("books.synopsis_" + language));
         book.setPrice(rs.getFloat("books.price"));
         book.setDiscount(rs.getFloat("books.discount"));
         book.setCover(rs.getString("books.cover"));

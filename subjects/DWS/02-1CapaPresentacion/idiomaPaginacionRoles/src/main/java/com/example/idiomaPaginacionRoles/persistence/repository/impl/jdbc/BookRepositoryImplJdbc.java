@@ -24,9 +24,10 @@ public class BookRepositoryImplJdbc implements BookRepository {
     private final GenreRepository genreRepository;
 
     @Override
-    public List<Book> findAll() {
+    public List<Book> findAll(int page, int size) {
         String sql = """
                 SELECT * FROM books
+                LIMIT ? OFFSET ?
                 """;
         return jdbcTemplate.query(sql, new BookRowMapper());
     }
