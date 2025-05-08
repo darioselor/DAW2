@@ -12,7 +12,7 @@ public class CategoryRowMapper implements RowMapper<Category> {
 
     @Override
     public Category mapRow(ResultSet rs, int rowNum) throws SQLException {
-        String language = LanguageUtils.getCurrentLenguage();
+        String language = LanguageUtils.getCurrentLanguage();
         Category category = new Category();
         category.setId(rs.getLong("categories.id"));
         category.setName(rs.getString("categories.name_" + language));

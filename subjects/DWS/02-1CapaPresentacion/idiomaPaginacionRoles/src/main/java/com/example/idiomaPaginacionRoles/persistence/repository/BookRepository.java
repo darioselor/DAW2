@@ -11,7 +11,7 @@ import com.example.idiomaPaginacionRoles.domain.model.Book;
 public interface BookRepository {
     public List<Book> findAll(int page, int size);
 
-    public int count();
+    int count();
 
     public Optional<Book> findByIsbn(String isbn);
 }

@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class LocaleConfig implements WebMvcConfigurer {
 
-    @Value("${app.laguage.default}")
+    @Value("${app.language.default}")
     private String defaultLanguage;
 
     @Override

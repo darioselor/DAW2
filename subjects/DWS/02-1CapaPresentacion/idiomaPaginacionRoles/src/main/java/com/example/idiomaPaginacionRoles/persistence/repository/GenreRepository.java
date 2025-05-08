@@ -5,5 +5,5 @@ import java.util.List;
 import com.example.idiomaPaginacionRoles.domain.model.Genre;
 
 public interface GenreRepository {
-    public List<Genre> findGenresByBookIsbn(String isbn);
+    List<Genre> findGenresByBookIsbn(String isbn);
 }

@@ -29,7 +29,7 @@ public class BookRepositoryImplJdbc implements BookRepository {
                 SELECT * FROM books
                 LIMIT ? OFFSET ?
                 """;
-        return jdbcTemplate.query(sql, new BookRowMapper());
+        return jdbcTemplate.query(sql, new BookRowMapper(), size, page * size);
     }
 
     @Override
@@ -43,18 +43,17 @@ public class BookRepositoryImplJdbc implements BookRepository {
     @Override
     public Optional<Book> findByIsbn(String isbn) {
         String sql = """
-                    SELECT * FROM books
-                    LEFT JOIN categories ON books.category_id = categories.id
-                    LEFT JOIN publishers ON books.publisher_id = publishers.id
-                    WHERE bookds.isbn = ?
-                """;
+                SELECT * FROM books
+                LEFT JOIN categories ON books.category_id = categories.id
+                LEFT JOIN publishers ON books.publisher_id = publishers.id
+                WHERE books.isbn = ?
+           """;
         try {
             Book book = jdbcTemplate.queryForObject(sql, new BookRowMapper(), isbn);
             book.setAuthors(authorRepository.findAuthorsByBookIsbn(isbn));
             book.setGenres(genreRepository.findGenresByBookIsbn(isbn));
             return Optional.of(book);
         } catch (Exception e) {
-            System.out.println("Error al mapear Book con ISBN {}: " + isbn + e);
             return Optional.empty();
         }
     }

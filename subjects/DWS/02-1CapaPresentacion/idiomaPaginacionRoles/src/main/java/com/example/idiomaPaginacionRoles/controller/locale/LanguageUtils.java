@@ -9,7 +9,7 @@ public class LanguageUtils {
         currentLocale.set(locale);
     }
 
-    public static String getCurrentLenguage() {
+    public static String getCurrentLanguage() {
         Locale locale = currentLocale.get();
         return locale != null ? locale.getLanguage() : Locale.getDefault().getLanguage();
     }

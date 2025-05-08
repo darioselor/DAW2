@@ -12,7 +12,7 @@ public class AuthorRowMapper implements RowMapper<Author> {
 
     @Override
     public Author mapRow(ResultSet rs, int rowNum) throws SQLException {
-        String language = LanguageUtils.getCurrentLenguage();
+        String language = LanguageUtils.getCurrentLanguage();
         Author author = new Author();
         author.setId(rs.getLong("authors.id"));
         author.setName(rs.getString("authors.name"));

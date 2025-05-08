@@ -5,6 +5,8 @@ import org.mapstruct.factory.Mappers;
 
 import com.example.idiomaPaginacionRoles.domain.model.Author;
 
+import java.util.List;
+
 @Mapper
 public interface AuthorMapper {
     AuthorMapper INSANCE = Mappers.getMapper(AuthorMapper.class);

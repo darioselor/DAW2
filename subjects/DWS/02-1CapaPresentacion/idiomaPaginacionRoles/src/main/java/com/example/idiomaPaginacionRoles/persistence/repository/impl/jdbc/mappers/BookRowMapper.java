@@ -13,7 +13,8 @@ public class BookRowMapper implements CustomRowMapper<Book> {
 
     @Override
     public Book mapRow(ResultSet rs, int rowNum) throws SQLException {
-        String language = LanguageUtils.getCurrentLenguage();
+
+        String language = LanguageUtils.getCurrentLanguage();
         Book book = new Book();
         book.setIsbn(rs.getString("books.isbn"));
         book.setTitle(rs.getString("books.title_" + language));

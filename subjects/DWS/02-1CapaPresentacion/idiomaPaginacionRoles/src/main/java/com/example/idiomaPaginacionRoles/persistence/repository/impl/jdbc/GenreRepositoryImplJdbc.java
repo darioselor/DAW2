@@ -23,7 +23,7 @@ public class GenreRepositoryImplJdbc implements GenreRepository {
                     SELECT * FROM genres
                     JOIN books_genres ON genres.id = books_genres.genre_id
                     JOIN books ON books_genres.book_id = books.id
-                    AND books.isbn = ?
+                    WHERE books.isbn = ?
                 """;
         return jdbcTemplate.query(sql, new GenreRowMapper(), isbn);
     }
