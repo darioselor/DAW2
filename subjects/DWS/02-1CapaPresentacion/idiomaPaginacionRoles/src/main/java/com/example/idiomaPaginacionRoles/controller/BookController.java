@@ -38,7 +38,7 @@ public class BookController {
             @RequestParam(required = false) Integer size) {
         int pageSize = (size != null) ? size : Integer.parseInt(defaultPageSize);
         List<BookCollection> bookCollections = bookService
-                .findAll()
+                .findAll(page-1, pageSize)
                 .stream()
                 .map(BookMapper.INSTANCE::toBookCollection)
                 .toList();

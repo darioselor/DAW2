@@ -33,6 +33,14 @@ public class BookRepositoryImplJdbc implements BookRepository {
     }
 
     @Override
+    public int count() {
+        String sql = """
+                SELECT COUNT(*) FROM books
+                """;
+        return  jdbcTemplate.queryForObject(sql, Integer.class);
+    }
+
+    @Override
     public Optional<Book> findByIsbn(String isbn) {
         String sql = """
                     SELECT * FROM books
