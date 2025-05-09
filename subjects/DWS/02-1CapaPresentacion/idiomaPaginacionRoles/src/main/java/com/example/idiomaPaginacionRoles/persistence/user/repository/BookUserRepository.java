@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.example.idiomaPaginacionRoles.domain.user.model.Book;
 
 @Repository
-public interface BookRepository {
+public interface BookUserRepository {
     public List<Book> findAll(int page, int size);
 
     int count();

@@ -6,14 +6,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.example.idiomaPaginacionRoles.domain.user.model.Author;
-import com.example.idiomaPaginacionRoles.persistence.user.repository.AuthorRepository;
+import com.example.idiomaPaginacionRoles.persistence.user.repository.AuthorUserRepository;
 import com.example.idiomaPaginacionRoles.persistence.user.repository.impl.jdbc.mappers.AuthorRowMapper;
 
 import lombok.RequiredArgsConstructor;
 
 @Repository
 @RequiredArgsConstructor
-public class AuthorRepositoryImplJdbc implements AuthorRepository {
+public class AuthorRepositoryImplJdbc implements AuthorUserRepository {
 
     private final JdbcTemplate jdbcTemplate;
 

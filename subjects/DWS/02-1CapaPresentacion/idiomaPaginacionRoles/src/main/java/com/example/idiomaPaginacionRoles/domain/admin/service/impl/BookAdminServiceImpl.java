@@ -1,7 +1,9 @@
-package com.example.idiomaPaginacionRoles.domain.admin.service;
+package com.example.idiomaPaginacionRoles.domain.admin.service.impl;
 
 import com.common.exception.ResourceNotFoundException;
 import com.example.idiomaPaginacionRoles.domain.admin.model.Book;
+import com.example.idiomaPaginacionRoles.domain.admin.service.BookAdminService;
+import com.example.idiomaPaginacionRoles.persistence.admin.repository.BookAdminRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +11,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class BookAdminServiceImpl implements BookAdminService{
+public class BookAdminServiceImpl implements BookAdminService {
     private final BookAdminRepository bookAdminRepository;
     @Override
     public List<Book> findAll() {

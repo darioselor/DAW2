@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.example.idiomaPaginacionRoles.domain.user.model.Genre;
 
-public interface GenreRepository {
+public interface GenreUserRepository {
     List<Genre> findGenresByBookIsbn(String isbn);
 }

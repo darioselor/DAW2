@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import com.common.exception.ResourceNotFoundException;
 import com.example.idiomaPaginacionRoles.domain.user.model.Book;
 import com.example.idiomaPaginacionRoles.domain.user.service.BookUserService;
-import com.example.idiomaPaginacionRoles.persistence.user.repository.BookRepository;
+import com.example.idiomaPaginacionRoles.persistence.user.repository.BookUserRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -15,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class BookUserServiceImpl implements BookUserService {
 
-    private final BookRepository bookRepository;
+    private final BookUserRepository bookRepository;
 
     @Override
     public List<Book> findAll(int page, int size) {

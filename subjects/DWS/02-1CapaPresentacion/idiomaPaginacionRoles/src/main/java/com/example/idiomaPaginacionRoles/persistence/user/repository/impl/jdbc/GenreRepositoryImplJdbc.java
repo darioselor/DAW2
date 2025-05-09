@@ -6,14 +6,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.example.idiomaPaginacionRoles.domain.user.model.Genre;
-import com.example.idiomaPaginacionRoles.persistence.user.repository.GenreRepository;
+import com.example.idiomaPaginacionRoles.persistence.user.repository.GenreUserRepository;
 import com.example.idiomaPaginacionRoles.persistence.user.repository.impl.jdbc.mappers.GenreRowMapper;
 
 import lombok.RequiredArgsConstructor;
 
 @Repository
 @RequiredArgsConstructor
-public class GenreRepositoryImplJdbc implements GenreRepository {
+public class GenreRepositoryImplJdbc implements GenreUserRepository {
 
     private final JdbcTemplate jdbcTemplate;
 

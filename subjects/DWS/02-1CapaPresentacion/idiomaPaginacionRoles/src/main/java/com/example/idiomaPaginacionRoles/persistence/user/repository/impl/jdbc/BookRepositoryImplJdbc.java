@@ -7,21 +7,21 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.example.idiomaPaginacionRoles.domain.user.model.Book;
-import com.example.idiomaPaginacionRoles.persistence.user.repository.AuthorRepository;
-import com.example.idiomaPaginacionRoles.persistence.user.repository.BookRepository;
-import com.example.idiomaPaginacionRoles.persistence.user.repository.GenreRepository;
+import com.example.idiomaPaginacionRoles.persistence.user.repository.AuthorUserRepository;
+import com.example.idiomaPaginacionRoles.persistence.user.repository.BookUserRepository;
+import com.example.idiomaPaginacionRoles.persistence.user.repository.GenreUserRepository;
 import com.example.idiomaPaginacionRoles.persistence.user.repository.impl.jdbc.mappers.BookRowMapper;
 
 import lombok.RequiredArgsConstructor;
 
 @Repository
 @RequiredArgsConstructor
-public class BookRepositoryImplJdbc implements BookRepository {
+public class BookRepositoryImplJdbc implements BookUserRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    private final AuthorRepository authorRepository;
-    private final GenreRepository genreRepository;
+    private final AuthorUserRepository authorRepository;
+    private final GenreUserRepository genreRepository;
 
     @Override
     public List<Book> findAll(int page, int size) {
