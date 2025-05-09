@@ -3,7 +3,7 @@
     {
       "id": "1",
       "nombre": "Juan Pérez",
-      "idArticulo": 1
+      "idArticulo": 8
     },
     {
       "id": "2",
@@ -18,14 +18,14 @@
   ],
   "articulos": [
     {
-      "id": "2",
-      "nombre": "Monitor LG 27 pulgadas",
-      "precio": 300
+      "id": "1",
+      "nombre": "Portátil Acer Aspire 5",
+      "precio": 700
     },
     {
       "id": "3",
-      "nombre": "Teclado mecánico Corsair K65",
-      "precio": 150
+      "nombre": "Monitor TFT Sony",
+      "precio": 250
     }
   ]
 }
