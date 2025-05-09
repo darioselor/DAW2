@@ -56,7 +56,7 @@ public class BookAdminRepositoryImpl implements BookAdminRepository {
                 WHERE books.isbn = ?                
                 """;
         try {
-            Book book = jdbcTemplate.queryForObject(sql, new BookRowMapper(), isbn);
+            Book book = (Book) jdbcTemplate.queryForObject(sql, new BookRowMapper(), isbn);
             book.setAuthors(authorAdminRepository.findAuthorByBookIsbn(isbn));
             book.setGenres(genreAdminRepository.findGenreByBookIsbn(isbn));
             return Optional.of(book);

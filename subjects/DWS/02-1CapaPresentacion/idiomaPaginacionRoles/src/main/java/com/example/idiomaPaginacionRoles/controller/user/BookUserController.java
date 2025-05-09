@@ -20,9 +20,9 @@ import com.example.idiomaPaginacionRoles.domain.user.service.BookUserService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping(BookController.URL)
+@RequestMapping(BookUserController.URL)
 @RequiredArgsConstructor
-public class BookController {
+public class BookUserController {
     public static final String URL = "/api/books";
     @Value("${app.base.url}")
     private String baseUrl;
