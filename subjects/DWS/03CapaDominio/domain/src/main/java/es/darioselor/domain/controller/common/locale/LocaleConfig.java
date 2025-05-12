@@ -13,6 +13,6 @@ public class LocaleConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new CustomLocaleInterceptor(defaultLanguage));
+        registry.addInterceptor(new CustomLocaleChangeInterceptor(defaultLanguage));
     }
 }

@@ -14,8 +14,12 @@ public class Book {
     private String isbn;
     private String title;
     private Publisher publisher;
+    private String synopsis;
+    private float price;
+    private float discount;
     private int year;
     private String cover;
+    private Category category;
     private List<Author> authors;
     private List<Genre> genres;
 }
