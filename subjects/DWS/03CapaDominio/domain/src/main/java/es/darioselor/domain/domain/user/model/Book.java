@@ -10,15 +10,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Book {
-    private long id;
     private String isbn;
     private String title;
-    private Publisher publisher;
     private String synopsis;
     private float price;
     private float discount;
-    private int year;
     private String cover;
+    private Publisher publisher;
     private Category category;
     private List<Author> authors;
     private List<Genre> genres;
