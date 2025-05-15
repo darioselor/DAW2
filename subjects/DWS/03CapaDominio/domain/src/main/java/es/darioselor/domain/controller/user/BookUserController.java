@@ -4,6 +4,8 @@ import es.darioselor.domain.controller.common.PaginatedResponse;
 import es.darioselor.domain.controller.user.webModel.Book.BookCollection;
 import es.darioselor.domain.controller.user.webModel.Book.BookDetail;
 import es.darioselor.domain.controller.user.webModel.Book.BookMapper;
+import es.darioselor.domain.domain.user.model.Author;
+import es.darioselor.domain.domain.user.model.Genre;
 import es.darioselor.domain.domain.user.service.BookUserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -47,6 +49,17 @@ public class BookUserController {
     public ResponseEntity<BookDetail> findByIsbn(@PathVariable String isbn) {
         BookDetail bookDetail = BookMapper.INSTANCE.toBookDetail(bookUserService.findByIsbn(isbn));
         return new ResponseEntity<>(bookDetail, HttpStatus.OK);
+    }
+
+    @PostMapping("/{is}/authors")
+    public ResponseEntity<Void> insertAuthors(@PathVariable String isbn, @RequestBody List<Author> authors){
+        bookUserService.insertAuthors(isbn, authors);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+    @PostMapping("/{is}/genres")
+    public ResponseEntity<Void> insertGenres(@PathVariable String isbn, @RequestBody List<Genre> genres){
+        bookUserService.insertGenres(isbn, genres);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 }

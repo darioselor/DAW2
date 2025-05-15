@@ -1,4 +1,4 @@
-package es.darioselor.domain.controller.common.locale;
+package es.darioselor.common.locale;
 
 import java.util.Locale;
 

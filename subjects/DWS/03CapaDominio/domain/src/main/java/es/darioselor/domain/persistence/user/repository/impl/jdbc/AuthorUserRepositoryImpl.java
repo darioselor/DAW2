@@ -1,7 +1,7 @@
 package es.darioselor.domain.persistence.user.repository.impl.jdbc;
 
 import es.darioselor.domain.domain.user.model.Author;
-import es.darioselor.domain.persistence.user.repository.AuthorUserRepository;
+import es.darioselor.domain.domain.user.repository.AuthorUserRepository;
 import es.darioselor.domain.persistence.user.repository.impl.jdbc.mappers.AuthorRowMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;

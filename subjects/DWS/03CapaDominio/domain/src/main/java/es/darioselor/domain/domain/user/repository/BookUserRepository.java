@@ -1,4 +1,4 @@
-package es.darioselor.domain.persistence.user.repository;
+package es.darioselor.domain.domain.user.repository;
 
 import es.darioselor.domain.domain.user.model.Book;
 

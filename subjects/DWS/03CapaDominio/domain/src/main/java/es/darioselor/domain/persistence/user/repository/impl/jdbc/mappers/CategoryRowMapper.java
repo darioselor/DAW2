@@ -1,6 +1,6 @@
 package es.darioselor.domain.persistence.user.repository.impl.jdbc.mappers;
 
-import es.darioselor.domain.controller.common.locale.LanguageUtils;
+import es.darioselor.common.locale.LanguageUtils;
 import es.darioselor.domain.domain.user.model.Category;
 import org.springframework.jdbc.core.RowMapper;
 
