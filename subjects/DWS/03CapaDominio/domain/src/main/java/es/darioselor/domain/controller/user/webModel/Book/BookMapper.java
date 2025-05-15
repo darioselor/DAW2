@@ -14,6 +14,7 @@ import org.mapstruct.factory.Mappers;
         GenreMapper.class
 })
 public interface BookMapper {
+
     BookMapper INSTANCE = Mappers.getMapper(BookMapper.class);
 
     BookCollection toBookCollection(Book book);

@@ -17,11 +17,11 @@ public class GenreUserRepositoryImpl implements GenreUserRepository {
     @Override
     public List<Genre> findGenresByBookIsbn(String isbn) {
         String sql = """
-                    SELECT * FROM genres
-                    JOIN books_genres ON genres.id = books_genres.genre_id
-                    JOIN books ON books_genres.book_id = books.id
-                    WHERE books.isbn = ?
-                """;
+                SELECT genres.* FROM genres
+                JOIN books_genres ON genres.id = books_genres.genre_id
+                JOIN books ON books_genres.book_id = books.id
+                AND books.isbn = ?
+           """;
         return jdbcTemplate.query(sql, new GenreRowMapper(), isbn);
     }
 }

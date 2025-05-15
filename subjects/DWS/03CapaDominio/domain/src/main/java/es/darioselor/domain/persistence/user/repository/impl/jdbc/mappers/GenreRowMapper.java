@@ -9,13 +9,12 @@ import java.sql.SQLException;
 
 public class GenreRowMapper implements RowMapper<Genre> {
     @Override
-    public Genre mapRow(ResultSet rs, int rowNum) throws SQLException {
+    public Genre mapRow(ResultSet resultSet, int rowNum) throws SQLException {
         String language = LanguageUtils.getCurrentLanguage();
         Genre genre = new Genre();
-        genre.setId(rs.getLong("genres.id"));
-        genre.setName(rs.getString("genre.name_"+language));
-        genre.setSlug(rs.getString("genre.slug"));
+        genre.setId(resultSet.getLong("genres.id"));
+        genre.setName(resultSet.getString("genres.name_" + language));
+        genre.setSlug(resultSet.getString("genres.slug"));
         return genre;
-
     }
 }

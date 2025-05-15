@@ -22,7 +22,7 @@ public class AuthorUserRepositoryImpl implements AuthorUserRepository {
                 JOIN books_authors ON authors.id = books_authors.author_id
                 JOIN books ON books_authors.book_id = books.id
                 AND books.isbn = ?
-                """;
+           """;
         return jdbcTemplate.query(sql, new AuthorRowMapper(), isbn);
 
     }

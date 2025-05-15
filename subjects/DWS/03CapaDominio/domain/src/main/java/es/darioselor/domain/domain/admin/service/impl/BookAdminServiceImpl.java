@@ -1,5 +1,6 @@
 package es.darioselor.domain.domain.admin.service.impl;
 
+import es.darioselor.common.exception.ResourceNotFoundException;
 import es.darioselor.domain.domain.admin.model.Book;
 import es.darioselor.domain.domain.admin.service.BookAdminService;
 import es.darioselor.domain.persistence.admin.repository.BookAdminRepository;
@@ -7,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -32,7 +32,8 @@ public class BookAdminServiceImpl implements BookAdminService {
     }
 
     @Override
-    public Optional<Book> findByIsbn(String isbn) {
-        return bookAdminRepository.findByIsbn(isbn);
+    public Book findByIsbn(String isbn) {
+
+        return bookAdminRepository.findByIsbn(isbn).orElseThrow(() -> new ResourceNotFoundException("Book isbn " + isbn + " not found"));
     }
 }
