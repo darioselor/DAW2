@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/01ArquitecturaPorCapas/ArquitecturaPorCapas/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_0CapaPresentacion/presentationLayer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_1CapaPresentacion/idiomaPaginacionRoles/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03CapaDominio/domainLayer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restaurante/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template/src/main/java" charset="UTF-8" />
+  </component>
+</project>

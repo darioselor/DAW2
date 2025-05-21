@@ -14,5 +14,7 @@ public class Genre {
     private String nameEn;
     private String slug;
 
-    public String getName(){}
+    public String getName(){
+        return nameEn;
+    }
 }
