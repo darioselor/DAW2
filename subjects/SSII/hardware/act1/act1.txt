@@ -173,3 +173,74 @@ AFE(16)
 0111
 ----
 0110
+
+1111 - 101=
+
+1111
+0101
+----
+1010
+
+1001 * 101=
+
+  1001
+  0101
+  ----
+  1001
+ 0000
+1001
+------
+101101
+
+11011*11= 
+
+  11011
+  00011
+  -----
+  11011
+ 11011
+ ------
+1010001
+
+1011*101=
+
+  1011
+  0101
+  ----
+  1011
+ 0000
+1011
+------
+110111
+
+5.Crea una llista amb 5 noms de programari per a cada punt:
+
+Base: Windows, MacOS, Linux, Android i iOS.
+Aplicació: Spotify, Notion, OBS, Excel i PowerPoint.
+Desenvolupament: VSCode, IntellIJ, Git, MySQLworkbench, Docker.
+
+6. Dibuixa l'arquitectura de Von Newmann
+
+https://www.google.com/imgres?q=arquitectura%20de%20von%20neumann&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb5%2FArquitectura_Von_Neumann.png&imgrefurl=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FArquitectura_de_Von_Neumann&docid=kYW8EbKJ51F5TM&tbnid=t9FhFLMdjZXpTM&vet=12ahUKEwihk-f7u7GNAxWYUaQEHWYCOoUQM3oECBkQAA..i&w=1200&h=1060&hcb=2&ved=2ahUKEwihk-f7u7GNAxWYUaQEHWYCOoUQM3oECBkQAA
+
+7. Dibuixa la jerarquia de memòria
+
+{Página 19 del Libro}
+
+8. Dibuixa la representació dels següents components electrònics.
+
+https://aules.edu.gva.es/fp/pluginfile.php/9200098/mod_resource/content/1/UD01/?h=desenvolupament#tipus-de-programari-o-software
+
+9. Utilitzant Simulide realitza un circuit que mitjançant l'ús de leds i polsadors simule
+un semàfor (Adjunta Captura de pantalla i el fitxer de simulació)
+
+-> "C:\Users\dario\Pictures\Screenshots\Screenshot 2025-05-20 092917.png"
+-> {Carpeta SSII/hardware/act1/ en DAW}
+
+
+10. Utilitzant Simulide realitza els circuits que simulen les portes lògiques AND, OR, NOT (Adjunta captura de pantalla i el fitxer de la simulació)
+
+-> "C:\Users\dario\Pictures\Screenshots\Screenshot 2025-05-20 094201.png"
+-> {Carpeta SSII/hardware/act1/ en DAW}
+
+
