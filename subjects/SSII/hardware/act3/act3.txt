@@ -1,0 +1,63 @@
+1. Quines són les característiques dels següents microprocessadors?
+
+Intel core i9 9900K
+Cantidad de núcleos 8
+Total de subprocesos 16
+Frecuencia turbo máxima 5.00 GHz
+Frecuencia de la Tecnología Intel® Turbo Boost 2.0‡ 5.00 GHz
+Frecuencia básica del procesador 3.60 GHz
+
+Intel core i7 6700K
+Cantidad de núcleos 4
+Total de subprocesos 8
+Frecuencia turbo máxima 4.20 GHz
+Frecuencia de la Tecnología Intel® Turbo Boost 2.0‡ 4.20 GHz
+Frecuencia básica del procesador 4.00 GHz
+
+Intel Core i5 12400F
+Cantidad de núcleos 6
+Cantidad de Performance-cores6
+Cantidad de Efficient-cores0
+Total de subprocesos 12
+Frecuencia turbo máxima 4.40 GHz
+Frecuencia turbo máxima del Performance-core 4.40 GHz
+Frecuencia base de Performance-core 2.50 GHz
+
+Intel core i3 12100F
+Cantidad de núcleos 4
+Cantidad de Performance-cores4
+Cantidad de Efficient-cores0
+Total de subprocesos 8
+Frecuencia turbo máxima 4.30 GHz
+Frecuencia turbo máxima del Performance-core 4.30 GHz
+Frecuencia base de Performance-core 3.30 GHz
+
+Ryzen 9 7950X3D
+Número de núcleos: 16.
+Número de hilos: 32.
+Frecuencia: 4.5GHz hasta 5.7GHz.
+Caché L3 (total): 64MB.
+Memoria: 3600 MT/s, 5200 MT/s.
+
+Ryzen 7 7800Z3D
+Socket AM5.
+Número de núcleos: 8.
+Número de hilos: 16.
+Frecuencia: 4.2GHz hasta 5.0GHz.
+
+Ryzen 5 PRO 4650G
+Arquitectura	Zen 2
+Núcleos / Hilos	6 núcleos / 12 hilos
+Frecuencia base	3.7 GHz
+Frecuencia turbo	Hasta 4.2 GHz
+Caché L2 / L3	3 MB L2 / 8 MB L3
+Socket	AM4
+
+Ryzen 7 3700X
+Característica	Valor
+Arquitectura	Zen 2
+Núcleos / Hilos	8 núcleos / 16 hilos
+Frecuencia base	3.6 GHz
+Frecuencia turbo	Hasta 4.4 GHz
+Caché L2 / L3	4 MB L2 / 32 MB L3
+Socket	AM4
