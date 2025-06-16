@@ -1,0 +1,23 @@
+<h2>Directivas</h2>
+<select [(ngModel)]="criterio" (change)="actualizarArticulos()">
+    <option value="todos">todos</option>
+    <option value="moviles">moviles</option>
+    <option value="portatiles">portatiles</option>
+    <option value="televisores">televisores</option>
+</select>
+<table class="tabla">
+    <tr class="tabla">
+        <td></td><td>id</td><td>nombre</td><td>descripcion</td><td>precio</td><td>unidades</td><td></td>
+    </tr>
+    @for (a of articulos; track $index) {
+        <tr>
+            <td></td>
+            <td>{{a.id}}</td>
+            <td>{{a.nombre}}</td>
+            <td>{{a.descripcion}}</td>
+            <td>{{a.precio}}</td>
+            <td>{{a.unidades}}</td>
+            <td><button [className]="a.unidades < 1 ? 'red' : 'blue' ">Ver Detalles</button></td> 
+        </tr>
+    }
+</table>

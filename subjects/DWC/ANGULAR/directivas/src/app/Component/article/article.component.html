@@ -1,0 +1,14 @@
+<div class="container">
+    @for (a of Articulos; track $index) {
+        <div class="card">
+            <h3 class="name">{{a.nombre}}</h3>
+            <p class="description">{{a.descripcion}}</p>
+            <h2 class="price">{{a.precio}}</h2>
+            @if (a.unidades < 1) {
+                <button class="button" disabled="true">Comprar</button>
+            } @else {
+                <button class="button">Comprar</button>
+            }
+        </div>
+    }
+</div>

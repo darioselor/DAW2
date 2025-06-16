@@ -1,14 +1,30 @@
 	criterios=["Sin ordenar","Ascendente por precio", "Descendente por precio"]
 	let cart;
-	let dialog;
 	function creaListaCriterios(){
-		
+		let selectCriterios = document.getElementById("criteriosOrdenacion");
+		let cont=0;
+		let content = "";
+		criterios.forEach(criterio => {
+			content += `<option value=${cont}>${criterio}</option>`;
+			cont += 1;
+		});
+		selectCriterios.innerHTML=content;
 	}
 
 
-	function pintaArticulos(){
-		let articulosDiv = document.getElementById("contenedor");
-		listaArticulos.forEach(a => {
+	function pintaArticulos(criterio){
+		const articulosDiv = document.getElementById("contenedor");
+		articulosDiv.innerHTML = "";
+		let copiaListaArticulos = listaArticulos.slice();
+		if (criterio == 1) {
+			copiaListaArticulos.sort((a,b)=> a.precio - b.precio);
+		}
+		if (criterio == 2) {
+			copiaListaArticulos.sort((a,b)=> b.precio - a.precio);
+		}
+		console.log(copiaListaArticulos);
+		
+		copiaListaArticulos.forEach(a => {
 			
 			let articulo = document.createElement("div");
 			articulo.className= `card`;
@@ -43,41 +59,57 @@
 
 			articulo.appendChild(imagen);
 			articulo.appendChild(cardBody);
+			articulo.appendChild(botonComprar);
+			
 			cardBody.appendChild(nombre);
 			cardBody.appendChild(descripcion);
 			cardBody.appendChild(b);
+			
 			b.appendChild(precio);
-			articulo.appendChild(botonComprar);
 			
 			articulosDiv.appendChild(articulo);
 		});
 	}
-	
 	
 	function ponArticuloEnCarrito(codigo){
 		let articulo = listaArticulos.find(a => a.codigo == codigo);
 		cart.anyadeArticulo(articulo);
 	}
 
-
 	function verCarro(){
 		cart.verCarrito();
 	}
 	
 	function efectuaPedido(){
-		
+		const pedido = {
+			"id" : cart.id,
+			"articulos": cart.articulosCarrito,
+			"total": cart.totalPrecio
+		};
+		console.log(pedido);
+		console.log("Pedido efectuado!");
+		dialog.close();
 	}
 	
 	window.onload=()=>{
-		
 		let iconoCarrito = document.getElementsByTagName("img")[0];
+		iconoCarrito.addEventListener("click", verCarro);
 		dialog = document.getElementById("miDialogo");
 		const btnCierraDialog = document.getElementById("btnCierraDialog");
+		btnCierraDialog.addEventListener("click", () => dialog.close());
+		
 		const btnEfectuaPedido = document.getElementById("btnEfectuaPedido");
+		btnEfectuaPedido.addEventListener("click", () => efectuaPedido());
+		
+		creaListaCriterios();
+		let selectCriterios = document.getElementById("criteriosOrdenacion").onchange = function () {
+			let valor = this.value;
+			pintaArticulos(valor);
+		}; 
 
-		iconoCarrito.addEventListener("click", verCarro);
+		pintaArticulos(0);
 		cart = new Carrito(1);
-		pintaArticulos();
-		verCarro();
+
+		
 	}
 
