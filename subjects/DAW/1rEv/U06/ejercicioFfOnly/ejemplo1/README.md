@@ -1,3 +1,0 @@
-# Ejemplo
-
-commit 1

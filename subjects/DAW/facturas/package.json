@@ -1,0 +1,23 @@
+{
+  "name": "facturas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": ".\\scripts\\build.sh",
+    "deploy": "mvn clean install && .\\scripts\\deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "facturas": "file:",
+    "onchange": "^7.1.0",
+    "sass": "^1.89.1",
+    "typescript": "^5.8.3"
+  }
+}
