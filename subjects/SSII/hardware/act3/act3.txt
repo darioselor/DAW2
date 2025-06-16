@@ -61,3 +61,117 @@ Frecuencia base	3.6 GHz
 Frecuencia turbo	Hasta 4.4 GHz
 Caché L2 / L3	4 MB L2 / 32 MB L3
 Socket	AM4
+
+--------------------------------------------
+
+2. Quin tipus de processadors es pot inserir en els següents sòcols.
+
+LGA 1700: Intel 12th, 13th, 14th Gen.
+LGA 1151: Intel 6th, 7th, 8th, 9th Gen.
+
+AM4: AMD Ryzen 1000 -> 5000
+AM%: AMD Ryzen 7000 -> futures generacions.
+
+--------------------------------------------
+
+3. Quin és el processador d'última generació en AMD i INTEL?
+
+AMD:
+
+- Ryzen 9000
+- Ryzen AI Max
+
+INTEL:
+
+- Core Ultra Serie 2
+- Core Ultra Serie 2 con vPro
+
+--------------------------------------------
+
+4. Descriu la informació que correspon a les següents memòries RAM buscant
+la identificació per internet. 
+
+1-> 
+Marca: Seven
+Capacitat: 16GB 
+Tipus: DDR3
+Voltatge: 1.35V
+Identificació: V7K1280016GBD-LV
+
+2->
+Marca: LDYN
+Capacitat: 8GB
+Tipus: DDR4
+Voltatge: 1.2V
+Identificació: CT8GJL2021040917 
+
+3->
+Marca: QIYIDA
+Capacitat: 16GB
+Tipus: 2RX4
+Voltatge: 
+Identificació: pc4-2133p-20-05-16
+
+4->
+Marca: TwinMOS
+Capacitat: 4GB
+Tipus: DDR4
+Voltatge: 1.2
+Identificació: 4DC3IOGE-MATP 
+
+5->
+Marca: ADATA
+Capacitat: 8GB
+Tipus: DDR5
+Voltatge: 1.1V
+Identificació: AD5548008G-S 
+
+6->
+Marca: ADATA
+Capacitat: 8GB
+Tipus: DDR5
+Voltatge: 1.1V
+Identificació: AD5U48008G-S 
+
+--------------------------------------------
+
+5. Cerca dos models de discos durs diferents en botigues de maquinari
+d'Internet i anota les característiques més representatives. Per exemple, la
+grandària, la capacitat, la interfície, el temps d'accés, la velocitat de rotació, la
+grandària de la caixet de disc, el preu, etc. 
+
+Disco Duro Forgeon Nimbus PLUS Disco SSD 2TB 7000MB/S NVMe PCIe 4.0 M.2 Gen4
+Capacitat: 2TB
+Interfícice:  PCle Gen4 NVme 1.4
+Velocitat de escritura: 6100MB/s
+Velocitat de lectura: 7000MB/s
+Preu: 114€
+
+Seagate ST2000VM003 - Disco Duro de 2 TB SATA 3, Color Gris
+Capacitat: 2TB
+Interfície: Serial ATA
+Velocitat de rotació: 5900RPM
+Preu: 61€
+
+--------------------------------------------
+
+6. Busca una imatge d’un disc magnètic i indica les seues parts físiques més
+importants. 
+
+--------------------------------------------
+
+7. Busca i indica tots els avantatges que tenen els discos SSD respecte als
+discos magnètics. 
+
+Els discs durs SSD no tenen parts mòbils, son molt més ràpids y tenen un rendiment superior.
+Al no tindre parts mòbils son me fiables físicament. Estalvien energía i generen menys calor.
+
+--------------------------------------------
+
+8. Prepara un esquema d'una targeta gràfica en el qual es representen els seus
+components principals. 
+
+https://aules.edu.gva.es/fp/pluginfile.php/9545277/mod_resource/content/1/UD1%20-%20SSII-Maquinari%20i%20Programari-II-1.pdf
+
+pagina 80
+
