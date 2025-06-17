@@ -1,1 +1,0 @@
-Tengo que conectarme a mi servidor desde mi usuario y probar el comando wall para mandar un mensaje
