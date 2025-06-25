@@ -1,0 +1,227 @@
+#!/bin/bash
+
+while true; do
+    clear
+    echo "==================== MENÚ PRINCIPAL ===================="
+    echo " 1. Instalar/desinstalar programa"
+    echo " 2. Crear carpeta"
+    echo " 3. Crear fichero"
+    echo " 4. Cambiar permiso a fichero"
+    echo " 5. Borrar fichero/carpeta"
+    echo " 6. Mover fichero/carpeta"
+    echo " 7. Crear/eliminar usuario"
+    echo " 8. Crear/eliminar grupo"
+    echo " 8.1 Gestionar usuario en grupo"
+    echo " 9. Cambiar contraseña a usuario"
+    echo "10. Conectarse a una máquina (SSH)"
+    echo "11. Copiar fichero a otra máquina (SCP)"
+    echo "12. Copiar fichero desde otra máquina (SCP)"
+    echo "13. Crear certificado"
+    echo "14. Planificar copia de seguridad"
+    echo " 0. Salir"
+    echo "========================================================"
+    
+    read -p "Selecciona una opción: " opcion
+    
+    case $opcion in
+        1)
+            clear
+            echo "1. Instalar programa"
+            echo "2. Desinstalar programa"
+            read -p "Selecciona: " subop
+            if [ "$subop" = "1" ]; then
+                read -p "Nombre del paquete a instalar: " paquete
+                sudo apt-get install -y "$paquete"
+            elif [ "$subop" = "2" ]; then
+                read -p "Nombre del paquete a desinstalar: " paquete
+                sudo apt-get remove -y "$paquete"
+            else
+                echo "Opción inválida"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        2)
+            clear
+            read -p "Ruta completa de la carpeta: " carpeta
+            mkdir -p "$carpeta"
+            echo "Carpeta creada: $carpeta"
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        3)
+            clear
+            read -p "Ruta completa del fichero: " fichero
+            touch "$fichero"
+            echo "Fichero creado: $fichero"
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        4)
+            clear
+            read -p "Ruta del fichero: " fichero
+            if [ -f "$fichero" ]; then
+                read -p "Permisos (ej. 755): " permisos
+                chmod "$permisos" "$fichero"
+                echo "Permisos actualizados"
+            else
+                echo "El fichero no existe"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        5)
+            clear
+            read -p "Ruta del elemento a borrar: " elemento
+            if [ -d "$elemento" ]; then
+                rm -rfi "$elemento"
+            elif [ -f "$elemento" ]; then
+                rm -i "$elemento"
+            else
+                echo "El elemento no existe"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        6)
+            clear
+            read -p "Ruta de origen: " origen
+            read -p "Ruta de destino: " destino
+            if [ -e "$origen" ]; then
+                mv -i "$origen" "$destino"
+                echo "Elemento movido"
+            else
+                echo "El origen no existe"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        7)
+            clear
+            echo "1. Crear usuario"
+            echo "2. Eliminar usuario"
+            read -p "Selecciona: " subop
+            if [ "$subop" = "1" ]; then
+                read -p "Nombre del usuario: " usuario
+                sudo adduser --gecos "" "$usuario"
+            elif [ "$subop" = "2" ]; then
+                read -p "Nombre del usuario: " usuario
+                sudo deluser "$usuario"
+            else
+                echo "Opción inválida"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        8)
+            clear
+            echo "1. Crear grupo"
+            echo "2. Eliminar grupo"
+            read -p "Selecciona: " subop
+            if [ "$subop" = "1" ]; then
+                read -p "Nombre del grupo: " grupo
+                sudo addgroup "$grupo"
+            elif [ "$subop" = "2" ]; then
+                read -p "Nombre del grupo: " grupo
+                sudo delgroup "$grupo"
+            else
+                echo "Opción inválida"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        8.1)
+            clear
+            echo "1. Añadir usuario a grupo"
+            echo "2. Quitar usuario de grupo"
+            read -p "Selecciona: " subop
+            if [ "$subop" = "1" ]; then
+                read -p "Nombre del usuario: " usuario
+                read -p "Nombre del grupo: " grupo
+                sudo adduser "$usuario" "$grupo"
+            elif [ "$subop" = "2" ]; then
+                read -p "Nombre del usuario: " usuario
+                read -p "Nombre del grupo: " grupo
+                sudo deluser "$usuario" "$grupo"
+            else
+                echo "Opción inválida"
+            fi
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        9)
+            clear
+            read -p "Nombre del usuario: " usuario
+            sudo passwd "$usuario"
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        10)
+            clear
+            read -p "Usuario remoto: " usuario
+            read -p "Dirección IP/Host: " ip
+            read -p "Puerto (22): " puerto
+            ssh -p "${puerto:-22}" "$usuario@$ip"
+            ;;
+        
+        11)
+            clear
+            read -p "Ruta local del fichero: " local
+            read -p "Usuario remoto: " usuario
+            read -p "Dirección remota: " ip
+            read -p "Ruta remota: " remota
+            read -p "Puerto (22): " puerto
+            scp -P "${puerto:-22}" "$local" "$usuario@$ip:$remota"
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        12)
+            clear
+            read -p "Usuario remoto: " usuario
+            read -p "Dirección remota: " ip
+            read -p "Ruta remota: " remota
+            read -p "Ruta local: " local
+            read -p "Puerto (22): " puerto
+            scp -P "${puerto:-22}" "$usuario@$ip:$remota" "$local"
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        13)
+            clear
+            read -p "Nombre del certificado (sin extensión): " nombre
+            read -p "Tamaño de clave (2048): " tamano
+            openssl genrsa -out "${nombre}.key" "${tamano:-2048}"
+            openssl req -new -key "${nombre}.key" -out "${nombre}.csr"
+            openssl x509 -req -days 365 -in "${nombre}.csr" -signkey "${nombre}.key" -out "${nombre}.crt"
+            echo "Certificados creados:"
+            ls -l "${nombre}."*
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        14)
+            clear
+            read -p "Minutos (0-59): " min
+            read -p "Hora (0-23): " hora
+            read -p "Día del mes (1-31): " dia
+            read -p "Origen (directorio): " origen
+            read -p "Destino (directorio): " destino
+            
+            comando="tar -czf \"$destino/backup-\$(date +\%Y\%m\%d).tar.gz\" \"$origen\""
+            
+            (crontab -l 2>/dev/null; echo "$min $hora $dia * * $comando") | crontab -
+            echo "Copia de seguridad programada:"
+            crontab -l | tail -n 1
+            read -p "Presiona Enter para continuar..."
+            ;;
+        
+        0)
+            echo "Saliendo del sistema..."
+            exit 0
+            ;;
+        
+        *)
+            echo "Opción inválida"
+            read -p "Presiona Enter para continuar..."
+            ;;
+    esac
+done

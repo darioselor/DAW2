@@ -1,0 +1,223 @@
+1. Requisits mínims de Windows 11
+Processador: Com mínim un Intel de 8a generació o AMD Ryzen 2000 (o més nou).
+
+RAM: 4 GB (però amb 8 GB anirà millor).
+
+Emmagatzematge: 64 GB de disc lliure.
+
+TPM 2.0: Una "xineta" de seguretat dins l'ordinador (la majoria d'ordinadors nous ja la porten).
+
+Versió: La més nova és la 23H2 (veureàs això en Configuració > Sistema > Informació).
+
+2. Introduir la clau de Windows 11
+Ves a Configuració > Sistema > Activació.
+
+Clica a "Canviar la clau de producte".
+
+Pega la clau (la que ve en la caixa o el correu electrònic).
+
+¡Listo! ✨
+
+3. Crear 2 particions en un mateix disc
+Prem Win + X > Administració de discs.
+
+Clica dret sobre el disc > "Reduir volum" (per fer espai lliure).
+
+Clica dret en l'espai lliure > "Nou volum simple".
+
+Tria la mida i assigna una lletra (ex: D:).
+
+En "Formatar", tria:
+
+NTFS (per a Windows).
+
+FAT32/exFAT (per a discos portàtils o compatibilitat).
+
+Repeteix per a la segona partició.
+
+⚠️ Atenció: No toques la partició "Reservada per al sistema".
+
+4. Canviar el fons d'escriptori
+Clica dret en l'escriptori > "Personalitzar".
+
+Tria una imatge de fons, un color, o posa la teua foto favorita.
+
+Per a més estil:
+
+Temes: Baixa'n de la Botiga de Microsoft.
+
+Fons de pantalla: Que canvie cada hora! 😎
+
+5. Mantenir el sistema actualitzat
+Ves a Configuració > Windows Update.
+
+Activa "Actualitzar automàticament".
+
+Reinicia quan et demane (millor quan no estigues treballant).
+
+6. Crear usuaris per als teus pares i un grup
+Configuració > Comptes > Família i altres usuaris.
+
+"Afegir altre usuari" (per a cada pare).
+
+Per fer un grup:
+
+Prem Win + R > Escriu lusrmgr.msc > Enter.
+
+Grups > Clica dret > Nou grup.
+
+Nom: "Pares".
+
+Afegeix els comptes del teu pare i mare.
+
+Fet! ✅
+
+7. Fitxer que només tu pots modificar (i els pares llegir)
+Clica dret sobre el fitxer > Propietats > Seguretat > Editar.
+
+En "Pares" (el grup), marca "Llegir".
+
+En EL TEU compte, marca "Control total".
+
+Clica Aplicar.
+
+8. Compartir una carpeta a casa
+Clica dret en la carpeta > "Compartir" > "Usuaris específics".
+
+Tria "Tothom" o els comptes dels pares.
+
+Posa "Llegir/escriure" segon convinga.
+
+Per accedir des d'altres PCs:
+
+A la Xarxa (Explorador de fitxers) haurien d'aparéixer els ordinadors.
+
+9. Veure programes en execució i controlar-los
+Prem Ctrl + Shift + Esc (obre l'Administrador de tasques).
+
+"Processos": Veus tot el que s'està executant.
+
+"Rendiment": Mira com està de càrrega la CPU, RAM, etc.
+
+Per tancar alguna cosa: Clica dret > "Finalitzar tasca".
+
+10. Monitorar el sistema (rendiment)
+Administrador de tasques > Rendiment (veus gràfics en temps real).
+
+O també: Win + R > perfmon > "Monitor de rendiment".
+
+11. Controladors de dispositius (versions/actualitzar)
+Prem Win + X > Administrador de dispositius.
+
+Expandeix una categoria (ex: "Adaptadors de vídeo").
+
+Clica dret en el dispositiu > "Propietats".
+
+"Controlador": Veus la versió i data.
+
+"Actualitzar controlador": Busca automàticament.
+
+12. RAID 1 (per no perdre dades)
+⚠️ Necessites 2 discs IDÈNTICS!
+
+Apaga l'ordinador i connecta els 2 discs.
+
+Encén i entra a la BIOS/UEFI (prem Del o F2 en arrancar).
+
+Busca "Storage" > "RAID Configuration".
+
+Crea un RAID 1 (Mirror) amb els dos discs.
+
+Desa i eix.
+
+En Windows, fes Administració de discs per inicialitzar el RAID.
+
+13. Consultar variables del sistema
+Prem Win + R > Escriu sysdm.cpl > Enter.
+
+Ves a "Avançades" > "Variables d'entorn".
+
+Ací veus coses com TEMP o PATH (per a programes).
+
+14. Fer còpia de seguretat
+Ves a Configuració > Actualització i seguretat > Còpia de seguretat.
+
+"Afegir una unitat" (un disc dur extern o xarxa).
+
+Tria les carpetes a copiar.
+
+"Realitzar còpia de seguretat" i relaxa't. ☕
+
+15. Programar una tasca
+Escriu "Programador de tasques" en el buscador.
+
+"Crea tasca bàsica".
+
+Posa nom (ex: "Neteja setmanal"), tria quan s'execute (dia, hora...).
+
+"Acció": Tria el programa a executar (ex: un .bat o l'neteja de disc).
+
+16. Xifrar una partició (amb BitLocker)
+⚠️ Només en Windows 11 Pro!
+
+Administració de discs > Clica dret en la partició > "Activar BitLocker".
+
+Tria "Introduir contrasenya" o "Desar clau en USB".
+
+IMPRIME O GUARDA LA CLAU DE RECUPERACIÓ (molt important!!!).
+
+Espera a que xifre (pot tardar hores).
+
+17. Visor d'esdeveniments (errors del sistema)
+Què és: Un llibre de registres del sistema (errors, advertències, etc.).
+
+Accedir: Win + R > eventvwr.msc > Enter.
+
+Consultar:
+
+"Registres de Windows" > "Sistema" o "Aplicació".
+
+Doble clic en un esdeveniment per veure detalls.
+
+18. Directives de seguretat
+Què són: Regles per protegir l'ordinador (contra pirates, etc.).
+
+Accedir: Win + R > secpol.msc > Enter.
+
+Consultar:
+
+"Directives locals" > "Directives de comptes" (ex: contrasenyes complexes).
+
+"Directives de clau pública" (certificats).
+
+19. Registre de Windows
+Què és: La base de dades MEGA important de Windows (¡no tocar a l'atzar!).
+
+Accedir: Win + R > regedit > Enter.
+
+Consultar:
+
+Les rutes són com carpetes (ex: HKEY_CURRENT_USER\Control Panel).
+
+¡Còpia de seguretat abans de fer canvis! (Clica dret > Exportar).
+
+20. WSL (Linux dins Windows)
+Instal·lar:
+
+Obre PowerShell com Administrador.
+
+Pega:
+
+text
+wsl --install  
+Reinicia.
+
+Espera a que s'instal·le automàticament Ubuntu.
+
+Utilitzar:
+
+Escriu "Ubuntu" en el buscador i obre l'aplicació.
+
+Crea el teu usuari i contrasenya de Linux.
+
+Ja pots executar comandes (ls, cd, sudo apt update, etc.).
