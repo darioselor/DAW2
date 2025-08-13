@@ -8,5 +8,5 @@ public interface GenreRepository {
     List<Genre> findAllGenresByBookId(long id);
     List<Genre> findAllGenresByBookIsbn(String isbn);
 
-    List<Genre> findAllById(List<Genre> genres);
+    List<Genre> findAllById(Long[] ids);
 }

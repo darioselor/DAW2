@@ -23,12 +23,14 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Optional<Book> findByIsbn(String isbn) {
-        return Optional.ofNullable(bookRepository.findByIsbn(isbn));
+        Book book = bookRepository.findByIsbn(isbn).orElse(null);
+        return Optional.ofNullable(book);
+
     }
 
     @Override
     public Optional<Book> findById(Long id) {
-        return Optional.ofNullable(bookRepository.findById(id));
+        return Optional.ofNullable(bookRepository.findById(id).orElse(null));
     }
 
     @Override

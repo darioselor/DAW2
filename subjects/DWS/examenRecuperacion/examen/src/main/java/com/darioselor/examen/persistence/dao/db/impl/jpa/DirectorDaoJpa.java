@@ -27,7 +27,7 @@ public class DirectorDaoJpa implements DirectorDaoDb {
                 .findAll()
                 .stream()
                 .map(DirectorJpaMapper.INSTANCE::toDirector)
-                .toList()
+                .toList();
     }
 
     @Override
@@ -38,9 +38,9 @@ public class DirectorDaoJpa implements DirectorDaoDb {
                 directorJpaRepository.findAll()
                         .stream()
                         .map(DirectorJpaMapper.INSTANCE::toDirector)
-                        .toList();
-                directorPage.getNumberOfElements();
-        )
+                        .toList(),
+                directorPage.getNumberOfElements()
+        );
 
     }
 

@@ -26,7 +26,7 @@ public class AuthorServiceImpl implements AuthorService {
                 authors
                         .stream()
                         .map(Author::getId)
-                        .toArray()
+                        .toArray(Long[]::new)
         );
         if (foundAuthors.size() != authors.size()) {
             throw new ResourceNotFoundException("Some authors were not found");

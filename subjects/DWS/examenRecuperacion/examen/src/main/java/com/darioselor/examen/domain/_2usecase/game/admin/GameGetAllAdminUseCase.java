@@ -6,5 +6,5 @@ import com.darioselor.examen.domain._1model.ListWithCount;
 import java.util.List;
 
 public interface GameGetAllAdminUseCase {
-    ListWithCount<Game> execute();
+    ListWithCount<Game> execute(int page, int pageSize);
 }

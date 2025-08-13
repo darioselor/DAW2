@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e0ff1a-8686-44a2-8682-0bbf97968526" name="Changes" comment="" />
+    <list default="true" id="d8e0ff1a-8686-44a2-8682-0bbf97968526" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../dws-jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dws-jpa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/controller/user/webmodel/book/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/controller/user/webmodel/book/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/AuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/GenreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/GenreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/PublisherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_3service/impl/PublisherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_4repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_4repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_4repository/GenreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/domain/_4repository/GenreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/persistence/repository/impl/AuthorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/persistence/repository/impl/AuthorRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/persistence/repository/impl/GenreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/darioselor/jpaFinalLayer/persistence/repository/impl/GenreRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/admin/webmodel/book/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/admin/webmodel/book/BookMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/user/webmodel/author/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/user/webmodel/author/AuthorMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/user/webmodel/genre/GenreMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/user/webmodel/genre/GenreMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/user/webmodel/publisher/PublisherMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/controller/user/webmodel/publisher/PublisherMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/AuthorJpaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/AuthorJpaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/BookJpaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/BookJpaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/CategoryJpaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/CategoryJpaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/GenreJpaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/GenreJpaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/PublisherJpaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/darioselor/jpaFinalLayer/persistence/dao/db/impl/jpa/mapper/PublisherJpaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examenRecuperacion/examen/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examenRecuperacion/examen/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/controller/admin/GameAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/controller/admin/GameAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/domain/_2usecase/game/admin/GameGetAllAdminUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/domain/_2usecase/game/admin/GameGetAllAdminUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/persistence/dao/db/impl/jpa/DirectorDaoJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/persistence/dao/db/impl/jpa/DirectorDaoJpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/persistence/dao/db/impl/jpa/GameDaoJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/persistence/dao/db/impl/jpa/GameDaoJpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/persistence/dao/db/impl/jpa/mapper/GameJpaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../examenRecuperacion/examen/src/main/java/com/darioselor/examen/persistence/dao/db/impl/jpa/mapper/GameJpaMapper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,10 +59,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Unnamed.executor": "Debug",
     "Maven.jpaFinalLayer [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "darioselor/DWS/dominio",
+    "git-widget-placeholder": "darioselor/SSII/Extraordinary",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/dario/Documents/DAW2/subjects/DWS/examenRecuperacion/examen",
     "project.structure.last.edited": "Project",
@@ -41,6 +71,15 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="darioselor.jpaFinalLayer.JpaFinalLayerApplication" />
+      <module name="jpaFinalLayer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

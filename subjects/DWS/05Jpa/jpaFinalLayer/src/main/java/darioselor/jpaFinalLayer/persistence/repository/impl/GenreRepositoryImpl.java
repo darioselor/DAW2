@@ -25,7 +25,7 @@ public class GenreRepositoryImpl implements GenreRepository {
     }
 
     @Override
-    public List<Genre> findAllById(List<Genre> genres) {
-        return genreDaoDb.findAllById(genres);
+    public List<Genre> findAllById(Long[] ids) {
+        return genreDaoDb.findAllById(ids);
     }
 }

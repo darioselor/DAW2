@@ -15,7 +15,7 @@ public class GenreServiceImpl implements GenreService {
     private final GenreRepository genreRepository;
     @Override
     public List<Genre> findByBookId(Long bookId) {
-        return genreRepository.findByBookId(bookId);
+        return genreRepository.findAllGenresByBookId(bookId);
     }
 
     @Override

@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-03T07:54:07+0200",
+    date = "2025-08-13T21:01:45+0200",
     comments = "version: 1.6.2, compiler: javac, environment: Java 21.0.7 (Amazon.com Inc.)"
 )
 public class GenreJpaMapperImpl implements GenreJpaMapper {

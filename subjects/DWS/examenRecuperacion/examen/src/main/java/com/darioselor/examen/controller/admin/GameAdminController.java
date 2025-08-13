@@ -33,7 +33,7 @@ public class GameAdminController {
 
     @GetMapping
     public ResponseEntity<PaginatedResponse<GameCollection>> getAll(
-            @RequestParam(defaultValue = "1") Integer page,
+            @RequestParam(defaultValue = "1") int page,
             @RequestParam(required = false) Integer size
     ){
         int pageSize = (size != null) ? size : Integer.parseInt(defaultPageSize);
@@ -50,6 +50,6 @@ public class GameAdminController {
                 0,
                 baseUrl
         );
-
+        return ResponseEntity.ok(response);
     }
 }

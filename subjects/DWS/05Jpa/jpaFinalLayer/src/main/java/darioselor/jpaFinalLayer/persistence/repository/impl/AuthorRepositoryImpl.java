@@ -23,7 +23,7 @@ public class AuthorRepositoryImpl implements AuthorRepository {
     }
 
     @Override
-    public List<Author> findAllById(List<Author> authors) {
-        return authorDaoDb.findAllById(authors);
+    public List<Author> findAllById(Long[] ids) {
+        return authorDaoDb.findAllById(ids);
     }
 }

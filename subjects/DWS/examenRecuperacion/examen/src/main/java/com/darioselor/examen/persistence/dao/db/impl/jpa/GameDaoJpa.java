@@ -21,7 +21,7 @@ public class GameDaoJpa implements GameDaoDb {
     @Override
     public Optional<Game> findByGameCode(String gameCode) {
         return Optional.ofNullable(gameJpaRepository.findByGameCode(gameCode))
-                .map(GameJpaMapper.INSTANCE::toGameWithDetails);
+                .map(gameEntity -> GameJpaMapper.INSTANCE.toGameWithDetails(gameEntity));
     }
 
     @Override

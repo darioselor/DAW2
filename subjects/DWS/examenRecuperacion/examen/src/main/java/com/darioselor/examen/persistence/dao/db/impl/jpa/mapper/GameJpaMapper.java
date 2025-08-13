@@ -15,7 +15,7 @@ public interface GameJpaMapper {
     GameJpaMapper INSTANCE = Mappers.getMapper(GameJpaMapper.class);
     Game toGameWithDetails (GameEntity gameEntity);
     @Mapping(target = "characters", ignore = true)
-    @Mapping(target = "directors", ignore = true)
+    @Mapping(target = "director", ignore = true)
     Game toGame(GameEntity gameEntity);
     GameEntity toGameEntity(Game game);
 }
